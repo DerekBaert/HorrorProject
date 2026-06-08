@@ -1,0 +1,98 @@
+[gd_scene format=3 uid="uid://cdo0eolghd6u5"]
+
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://Taq/addons/proto_controller/proto_controller.tscn" id="1_80c3a"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_3invt"]
+sky_top_color = Color(0.5220882, 0.38144124, 0.61258817, 1)
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+sky_curve = 0.2049056
+sky_energy_multiplier = 0.0
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_80c3a"]
+sky_material = SubResource("ProceduralSkyMaterial_3invt")
+
+[sub_resource type="Environment" id="Environment_d17em"]
+background_mode = 2
+sky = SubResource("Sky_80c3a")
+tonemap_mode = 2
+
+[node name="Node3D" type="Node3D" unique_id=358442007]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1387324029]
+environment = SubResource("Environment_d17em")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=820975117]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 4.8, 0)
+shadow_enabled = true
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="." unique_id=534658744]
+use_collision = true
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1519019568]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.42, 2.0161934, 0)
+size = Vector3(0.4, 3.4277344, 11.6)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="CSGCombiner3D" unique_id=190211569]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.21999979, 2.0161934, 5.5)
+size = Vector3(0.4, 3.4277344, 11.6)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="CSGCombiner3D" unique_id=520247375]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.120000124, 2.0161934, -5.6)
+size = Vector3(0.4, 3.4277344, 11.6)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1041083782]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.38, 2.0161934, -0.099999905)
+size = Vector3(0.4, 3.4277344, 11.6)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="CSGCombiner3D" unique_id=604131806]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6500001, 2.0161934, 2.9500003)
+size = Vector3(0.4, 3.4277344, 5.5)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="CSGCombiner3D/CSGBox3D6" unique_id=1186883057]
+transform = Transform3D(-0.0813634, -0.9750896, 0, 1.3969558, -0.056792494, 0, 0, 0, 1, -0.049915373, -0.80290735, 0)
+operation = 2
+radius = 1.3000001
+height = 2.1
+sides = 20
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D" unique_id=303827265]
+use_collision = true
+size = Vector3(11.1, 0.7, 11.7)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="CSGCombiner3D" unique_id=845426067]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+use_collision = true
+size = Vector3(11.1, 0.7, 11.7)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="CSGCombiner3D/CSGBox3D7" unique_id=407569618]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, -3.7)
+operation = 2
+
+[node name="SpotLight3D" type="SpotLight3D" parent="CSGCombiner3D/CSGBox3D7/CSGCylinder3D" unique_id=180316865]
+transform = Transform3D(1, 0, 0, 0, 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, -0.2999997, -1.1920929e-06)
+shadow_enabled = true
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="CSGCombiner3D/CSGBox3D7" unique_id=1333820882]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, 2.3841858e-07)
+operation = 2
+radius = 1.4
+
+[node name="SpotLight3D" type="SpotLight3D" parent="CSGCombiner3D/CSGBox3D7/CSGCylinder3D2" unique_id=1299853707]
+transform = Transform3D(1, 0, 0, 0, 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, -0.2999997, -1.1920929e-06)
+shadow_enabled = true
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="CSGCombiner3D/CSGBox3D7" unique_id=1002882167]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3000002, 0, -2.8999999)
+operation = 2
+radius = 1.0
+
+[node name="SpotLight3D" type="SpotLight3D" parent="CSGCombiner3D/CSGBox3D7/CSGCylinder3D3" unique_id=494231969]
+transform = Transform3D(1, 0, 0, 0, 7.54979e-08, 1, 0, -1, 7.54979e-08, 0, -0.2999997, -1.1920929e-06)
+shadow_enabled = true
+
+[node name="ProtoController" parent="." unique_id=715790818 instance=ExtResource("1_80c3a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.2, 0.3, 1.5)
+can_jump = false
+look_speed = 0.005
+base_speed = 2.0
