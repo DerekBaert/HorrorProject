@@ -20,6 +20,13 @@ albedo_color = Color(0.9704502, 0.46969372, 0.3443811, 1)
 [sub_resource type="Resource" id="Resource_vbegm"]
 script = ExtResource("4_g14j6")
 
+[sub_resource type="Curve3D" id="Curve3D_ppyta"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -13, 2, 3, 0, 0, 0, 0, 0, 0, -11.5, 2, 3, 0, 0, 0, 0, 0, 0, -8, 2, 4, 0, 0, 0, 0, 0, 0, -5, 2, 5, 0, 0, 0, 0, 0, 0, -2, 2, 5, 0, 0, 0, 0, 0, 0, 0, 2, 5, 0, 0, 0, 0, 0, 0, 2, 2, 5, 0, 0, 0, 0, 0, 0, 5, 2, 4, 0, 0, 0, 0, 0, 0, 8, 2, 3, 0, 0, 0, 0, 0, 0, 11, 2, 3, 0, 0, 0, 0, 0, 0, 13, 2, 3),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+}
+point_count = 11
+
 [node name="Node3D" type="Node3D" unique_id=891109768]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1479595467]
@@ -33,7 +40,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0007324219, 0, 0)
 shape = SubResource("BoxShape3D_ppyta")
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=1851783586]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5399046, 2.4247098, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, 2.425, 0)
 script = ExtResource("1_37kl0")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D" unique_id=487478688]
@@ -45,7 +52,7 @@ shape = SubResource("CapsuleShape3D_37kl0")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1840603833]
 physics_interpolation_mode = 1
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5399046, 3.4247098, 5)
+transform = Transform3D(0.98623383, 0.021804243, 0.16391277, -9.313226e-10, 0.9912681, -0.13186188, -0.16535667, 0.13004665, 0.97762215, -10.971698, 2, 3.1509433)
 top_level = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera3D" unique_id=2058109076]
@@ -54,14 +61,21 @@ process_physics_priority = 300
 script = ExtResource("2_ppyta")
 metadata/_custom_type_script = "uid://bd046eokvcnu2"
 
-[node name="PhantomCamera3D" type="Node3D" parent="." unique_id=779137854 node_paths=PackedStringArray("follow_target")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5399046, 3.4247098, 5)
+[node name="PhantomCamera3D" type="Node3D" parent="." unique_id=779137854 node_paths=PackedStringArray("follow_target", "follow_path", "look_at_target")]
+transform = Transform3D(0.98614895, 0.02180377, 0.16391072, -9.312424e-10, 0.9912466, -0.13186023, -0.16534244, 0.13004383, 0.97760993, -10.971698, 2, 3.1509433)
 top_level = true
 script = ExtResource("3_ykrsh")
-follow_mode = 2
+follow_mode = 4
 follow_target = NodePath("../CharacterBody3D")
+follow_path = NodePath("../Path3D")
+look_at_mode = 2
+look_at_target = NodePath("../CharacterBody3D")
 tween_resource = SubResource("Resource_vbegm")
 follow_offset = Vector3(0, 1, 5)
 align_transform_with_view = Callable()
 align_position_with_view = Callable()
+align_rotation_with_view = Callable()
 metadata/_custom_type_script = "uid://csjccrhj5wnx7"
+
+[node name="Path3D" type="Path3D" parent="." unique_id=745832218]
+curve = SubResource("Curve3D_ppyta")

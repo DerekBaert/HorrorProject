@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://b3cmidc82o837"]
+
+[ext_resource type="Script" uid="uid://dxmknht4j05sm" path="res://character_body_3d.gd" id="1_eaio2"]
+[ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="2_qrhyx"]
+[ext_resource type="Script" uid="uid://csjccrhj5wnx7" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd" id="3_1ydto"]
+[ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="4_tvwqe"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_mf4mk"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ppyta"]
+size = Vector3(1.0014648, 1, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_8uh7m"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6uqi0"]
+albedo_color = Color(0.9704502, 0.46969372, 0.3443811, 1)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_37kl0"]
+
+[sub_resource type="Resource" id="Resource_vbegm"]
+script = ExtResource("4_tvwqe")
+
+[sub_resource type="Curve3D" id="Curve3D_ppyta"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -15, 2, 3, 0, 0, 0, 0, 0, 0, -11.5, 2, 3, 0, 0, 0, 0, 0, 0, -8, 2, 4, 0, 0, 0, 0, 0, 0, -5, 2, 5, 0, 0, 0, 0, 0, 0, -2, 2, 5, 0, 0, 0, 0, 0, 0, 0, 2, 5, 0, 0, 0, 0, 0, 0, 2, 2, 5, 0, 0, 0, 0, 0, 0, 5, 2, 4, 0, 0, 0, 0, 0, 0, 8, 2, 3, 0, 0, 0, 0, 0, 0, 11, 2, 3, 0, 0, 0, 0, 0, 0, 15, 2, 3),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+}
+point_count = 11
+
+[node name="Node3D" type="Node3D" unique_id=891109768]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1479595467]
+transform = Transform3D(28.325401, 0, 0, 0, 1, 0, 0, 0, 29.634346, 0, 0, 0)
+mesh = SubResource("BoxMesh_mf4mk")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D" unique_id=534350343]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D" unique_id=1509704557]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0007324219, 0, 0)
+shape = SubResource("BoxShape3D_ppyta")
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=1851783586]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6788726, 0)
+script = ExtResource("1_eaio2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D" unique_id=487478688]
+mesh = SubResource("CapsuleMesh_8uh7m")
+surface_material_override/0 = SubResource("StandardMaterial3D_6uqi0")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=776921591]
+shape = SubResource("CapsuleShape3D_37kl0")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1840603833]
+physics_interpolation_mode = 1
+transform = Transform3D(1, 0, 0, 0, 0.9985774, 0.053320684, 0, -0.053320684, 0.9985774, 0, 2, 6.014)
+top_level = true
+
+[node name="PhantomCameraHost" type="Node" parent="Camera3D" unique_id=2058109076]
+process_priority = 300
+process_physics_priority = 300
+script = ExtResource("2_qrhyx")
+metadata/_custom_type_script = "uid://bd046eokvcnu2"
+
+[node name="PhantomCamera3D" type="Node3D" parent="." unique_id=779137854 node_paths=PackedStringArray("follow_target", "follow_path", "look_at_target")]
+transform = Transform3D(0.99991393, 0, 0, 0, 0.9985556, 0.05328949, 0, -0.053319518, 0.99799323, 0, 2, 6.014)
+top_level = true
+script = ExtResource("3_1ydto")
+follow_mode = 1
+follow_target = NodePath("../FixedPoint")
+follow_path = NodePath("../Path3D")
+look_at_mode = 2
+look_at_target = NodePath("../CharacterBody3D")
+tween_resource = SubResource("Resource_vbegm")
+follow_offset = Vector3(0, 1, 5)
+align_transform_with_view = Callable()
+align_position_with_view = Callable()
+align_rotation_with_view = Callable()
+metadata/_custom_type_script = "uid://csjccrhj5wnx7"
+
+[node name="Path3D" type="Path3D" parent="." unique_id=745832218]
+curve = SubResource("Curve3D_ppyta")
+
+[node name="FixedPoint" type="Node3D" parent="." unique_id=2083923925]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 6.014)
