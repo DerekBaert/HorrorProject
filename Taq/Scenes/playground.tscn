@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cn0h6ql801lt8"]
+
+[ext_resource type="PackedScene" uid="uid://kssbl0dy053q" path="res://Taq/Actors/character.tscn" id="1_lghcy"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_t1pbf"]
+
+[node name="Playground" type="Node2D" unique_id=106182145]
+
+[node name="Ground" type="StaticBody2D" parent="." unique_id=1744438259]
+position = Vector2(558, 496)
+scale = Vector2(1, 0.7219917)
+
+[node name="Ground" type="Polygon2D" parent="Ground" unique_id=1274505048]
+position = Vector2(-534, -435.38504)
+polygon = PackedVector2Array(-41, 434, 1180, 434, 1180, 672, -46, 675)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground" unique_id=1933742365]
+shape = SubResource("WorldBoundaryShape2D_t1pbf")
+
+[node name="Character" parent="." unique_id=1837472615 instance=ExtResource("1_lghcy")]
+position = Vector2(581, 154)

@@ -1,0 +1,8 @@
+
+=== THINGS TO TRY =========================================
+
+- Interactive objects using Resource
+	- Dialogue triggered by that
+- Flexible dialogue
+	- Portrait + tween
+	- Event trigger
