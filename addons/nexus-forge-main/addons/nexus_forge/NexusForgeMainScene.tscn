@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://dykskyw7tvdof"]
+
+[ext_resource type="Theme" path="res://addons/nexus_forge/default_theme.tres" id="1_14xiq"]
+[ext_resource type="Script" path="res://addons/nexus_forge/nexus_forge_main_scene_script.gd" id="1_15n6i"]
+[ext_resource type="Texture2D" path="res://addons/nexus_forge/icons/nexus_forge_small.svg" id="2_efg3d"]
+[ext_resource type="Texture2D" path="res://addons/nexus_forge/splash/nexus_forge_large.svg" id="11_at7in"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yutfl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_efg3d"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+
+[node name="NexusForgeMainScene" type="Control" unique_id=467648725]
+clip_contents = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("1_14xiq")
+script = ExtResource("1_15n6i")
+
+[node name="MainContainer" type="VBoxContainer" parent="." unique_id=616683037]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="ToolTabBar" type="TabBar" parent="MainContainer" unique_id=800614806]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/icon_max_width = 22
+current_tab = 0
+tab_count = 1
+tab_0/icon = ExtResource("2_efg3d")
+
+[node name="ToolScroll" type="ScrollContainer" parent="MainContainer" unique_id=1052498294]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ToolContainer" type="PanelContainer" parent="MainContainer/ToolScroll" unique_id=235404128]
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxEmpty_yutfl")
+
+[node name="NexusForge" type="Control" parent="MainContainer/ToolScroll/ToolContainer" unique_id=940061150]
+layout_mode = 2
+
+[node name="SplashPanel" type="PanelContainer" parent="MainContainer/ToolScroll/ToolContainer/NexusForge" unique_id=397440938]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_efg3d")
+
+[node name="SplashTexture" type="TextureRect" parent="MainContainer/ToolScroll/ToolContainer/NexusForge/SplashPanel" unique_id=359310339]
+modulate = Color(0.498354, 0.563604, 0.683898, 1)
+texture_filter = 4
+layout_mode = 2
+texture = ExtResource("11_at7in")
+expand_mode = 1
+stretch_mode = 5
