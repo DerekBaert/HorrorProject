@@ -42,5 +42,6 @@ func get_input(delta):
 		move_direction.y = 0.0
 		move_direction = move_direction.normalized()
 		velocity = move_direction * forward_speed * delta
+		look_at(global_position + move_direction, Vector3.UP, false)
 		pass
 	pass
