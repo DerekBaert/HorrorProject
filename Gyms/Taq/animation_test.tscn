@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dv3y70s4cslxj"]
 
-[ext_resource type="PackedScene" uid="uid://dhfnnomvsaotm" path="res://Taq/Asset/UAL1_Standard.glb" id="1_xf6hh"]
-[ext_resource type="Script" uid="uid://d34succhunpn4" path="res://Taq/Asset/ual_1_standard.gd" id="2_tsgl8"]
+[ext_resource type="PackedScene" uid="uid://dhfnnomvsaotm" path="res://Gyms/Taq/Asset/UAL1_Standard.glb" id="1_xf6hh"]
+[ext_resource type="Script" uid="uid://d34succhunpn4" path="res://Gyms/Taq/Asset/ual_1_standard.gd" id="2_tsgl8"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_xf6hh"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)

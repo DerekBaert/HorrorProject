@@ -4,18 +4,20 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dhfnnomvsaotm"
-path="res://.godot/imported/UAL1_Standard.glb-d832b6818f2ab5846b46e1fadb763f8c.scn"
+path="res://.godot/imported/UAL1_Standard.glb-65cf46f6ea2f285b9cb44bcc0c0be2de.scn"
 
 [deps]
 
-source_file="res://Taq/Asset/UAL1_Standard.glb"
-dest_files=["res://.godot/imported/UAL1_Standard.glb-d832b6818f2ab5846b46e1fadb763f8c.scn"]
+source_file="res://Gyms/Taq/Asset/UAL1_Standard.glb"
+dest_files=["res://.godot/imported/UAL1_Standard.glb-65cf46f6ea2f285b9cb44bcc0c0be2de.scn"]
 
 [params]
 
 nodes/root_type=""
 nodes/root_name=""
 nodes/root_script=null
+mesh_library/use_node_names_as_mesh_names=false
+array_mesh/deduplicate_surfaces=true
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 nodes/import_as_skeleton_bones=false
@@ -39114,3 +39116,4 @@ _subresources={
 }
 gltf/naming_version=2
 gltf/embedded_image_handling=1
+gltf/texture_map_mode=0

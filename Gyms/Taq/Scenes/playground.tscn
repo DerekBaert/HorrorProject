@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cn0h6ql801lt8"]
 
-[ext_resource type="PackedScene" uid="uid://kssbl0dy053q" path="res://Taq/Actors/character.tscn" id="1_lghcy"]
+[ext_resource type="PackedScene" uid="uid://kssbl0dy053q" path="res://Gyms/Taq/Actors/character.tscn" id="1_lghcy"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_t1pbf"]
 
