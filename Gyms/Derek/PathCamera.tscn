@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bjgbjexckvusy"]
 
-[ext_resource type="Script" uid="uid://dxmknht4j05sm" path="res://character_body_3d.gd" id="1_37kl0"]
+[ext_resource type="Script" uid="uid://dxmknht4j05sm" path="res://Gyms/Derek/character_body_3d.gd" id="1_37kl0"]
 [ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="2_ppyta"]
 [ext_resource type="Script" uid="uid://csjccrhj5wnx7" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd" id="3_ykrsh"]
 [ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="4_g14j6"]
@@ -52,7 +52,7 @@ shape = SubResource("CapsuleShape3D_37kl0")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1840603833]
 physics_interpolation_mode = 1
-transform = Transform3D(0.98623383, 0.021804243, 0.16391277, -9.313226e-10, 0.9912681, -0.13186188, -0.16535667, 0.13004665, 0.97762215, -10.971698, 2, 3.1509433)
+transform = Transform3D(0.98623383, 0.021804243, 0.16391279, -9.313226e-10, 0.99126816, -0.1318619, -0.16535667, 0.13004667, 0.97762215, -10.971698, 2, 3.1509433)
 top_level = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera3D" unique_id=2058109076]
@@ -72,9 +72,6 @@ look_at_mode = 2
 look_at_target = NodePath("../CharacterBody3D")
 tween_resource = SubResource("Resource_vbegm")
 follow_offset = Vector3(0, 1, 5)
-align_transform_with_view = Callable()
-align_position_with_view = Callable()
-align_rotation_with_view = Callable()
 metadata/_custom_type_script = "uid://csjccrhj5wnx7"
 
 [node name="Path3D" type="Path3D" parent="." unique_id=745832218]
