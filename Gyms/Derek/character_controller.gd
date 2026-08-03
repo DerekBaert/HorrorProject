@@ -3,7 +3,8 @@ extends CharacterBody3D
 @export var forward_speed: float = 300.0
 @export var backward_speed: float = 100.0
 @export var turn_speed: float = 1.0
-@export var tank_controls: bool = false
+@export var auto_turn_speed: float = 5.0
+@export var tank_controls: bool = true
 @onready var camera = $"../Camera3D"
 
 # Called when the node enters the scene tree for the first time.
@@ -39,9 +40,10 @@ func get_input(delta):
 		var forward = camera.global_basis.z
 		var right = camera.global_basis.x		
 		var move_direction = forward * raw_input.y + right * raw_input.x		
-		move_direction.y = 0.0
-		move_direction = move_direction.normalized()
+		
 		velocity = move_direction * forward_speed * delta
-		look_at(global_position + move_direction, Vector3.UP, false)
+		if move_direction:
+			rotation.y = rotate_toward(rotation.y, Vector2(-move_direction.z, -move_direction.x).angle(), auto_turn_speed * delta)
+			pass
 		pass
 	pass
