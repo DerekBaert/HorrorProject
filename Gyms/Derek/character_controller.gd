@@ -7,6 +7,8 @@ extends CharacterBody3D
 @export var tank_controls: bool = false
 @onready var camera = $"../Camera3D"
 
+@onready var interactionCheck = $ShapeCast3D
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -45,5 +47,8 @@ func get_input(delta):
 		if move_direction:
 			rotation.y = rotate_toward(rotation.y, Vector2(-move_direction.z, -move_direction.x).angle(), auto_turn_speed * delta)
 			pass
+		pass
+	if Input.is_action_just_pressed("interact"):
+		print(interactionCheck.collision_result)
 		pass
 	pass
