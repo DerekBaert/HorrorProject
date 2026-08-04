@@ -1,10 +1,10 @@
 extends CharacterBody3D
 
-@export var forward_speed: float = 300.0
-@export var backward_speed: float = 100.0
+@export var forward_speed: float = 150.0
+@export var backward_speed: float = forward_speed * 0.5
 @export var turn_speed: float = 1.0
 @export var auto_turn_speed: float = 5.0
-@export var tank_controls: bool = true
+@export var tank_controls: bool = false
 @onready var camera = $"../Camera3D"
 
 # Called when the node enters the scene tree for the first time.
