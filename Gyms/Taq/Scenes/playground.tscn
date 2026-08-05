@@ -1,8 +1,18 @@
 [gd_scene format=3 uid="uid://cn0h6ql801lt8"]
 
 [ext_resource type="PackedScene" uid="uid://kssbl0dy053q" path="res://Gyms/Taq/Actors/character.tscn" id="1_lghcy"]
+[ext_resource type="Texture2D" uid="uid://dcw8u5ulsr657" path="res://icon.svg" id="2_7p2em"]
+[ext_resource type="Script" uid="uid://7qg61do5v7u3" path="res://Gyms/Taq/Scenes/ItemUITrigger.gd" id="2_cgsx8"]
+[ext_resource type="PackedScene" uid="uid://dgtmebegip1t2" path="res://Gyms/Taq/Dialogue/ItemUI.tscn" id="3_1geca"]
+[ext_resource type="Resource" uid="uid://xl1b3aex0m2" path="res://Gyms/Taq/Dialogue/Item.dialogue" id="4_d5tbn"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_t1pbf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s1u34"]
+size = Vector2(112, 119)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m7v3l"]
+size = Vector2(162, 90)
 
 [node name="Playground" type="Node2D" unique_id=106182145]
 
@@ -19,3 +29,23 @@ shape = SubResource("WorldBoundaryShape2D_t1pbf")
 
 [node name="Character" parent="." unique_id=1837472615 instance=ExtResource("1_lghcy")]
 position = Vector2(581, 154)
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=1474540217]
+position = Vector2(1004, 395)
+script = ExtResource("2_cgsx8")
+dialogueBalloon = ExtResource("3_1geca")
+dialogueResource = ExtResource("4_d5tbn")
+dialogueTitle = "start"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=289722686]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_s1u34")
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D" unique_id=2028790714]
+modulate = Color(18.892157, 12.130976, 14.384704, 1)
+texture = ExtResource("2_7p2em")
+
+[node name="Area2D" type="Area2D" parent="RigidBody2D" unique_id=993832977]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D/Area2D" unique_id=718976739]
+shape = SubResource("RectangleShape2D_m7v3l")

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dl5nifbvguey1"
+path="res://.godot/imported/Dialogue.dialogue-f0673f24ab2119413f5739097f19c3fe.tres"
+
+[deps]
+
+source_file="res://Gyms/Taq/Dialogue/Dialogue.dialogue"
+dest_files=["res://.godot/imported/Dialogue.dialogue-f0673f24ab2119413f5739097f19c3fe.tres"]
+
+[params]
+
+defaults=true

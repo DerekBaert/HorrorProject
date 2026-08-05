@@ -1,9 +1,6 @@
 
-=== THINGS TO TRY =========================================
+=== QUICK NOTE =========================================
 
-- Interactive objects using Resource
-	- Dialogue triggered by that
-- Flexible dialogue
-	- Portrait + tween
-	- Event trigger
-	- Try Nexus Forge
+## To trigger dialogue
+
+DialogueManager.show_dialogue_balloon_scene(PATH TO DIALOGUE BALLOON (String), load(PATH TO DIALOGUE FILE (String)), NAME OF DIALOGUE TITLE (String))
