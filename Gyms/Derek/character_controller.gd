@@ -49,6 +49,6 @@ func get_input(delta):
 			pass
 		pass
 	if Input.is_action_just_pressed("interact"):
-		print(interactionCheck.collision_result)
+		interactionCheck.interact()
 		pass
 	pass
