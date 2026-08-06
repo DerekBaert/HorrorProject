@@ -16,8 +16,6 @@ size = Vector2(162, 90)
 
 [node name="Playground" type="Node2D" unique_id=106182145]
 
-[node name="ItemManager" parent="." unique_id=871449358 instance=ExtResource("1_1geca")]
-
 [node name="Ground" type="StaticBody2D" parent="." unique_id=1744438259]
 position = Vector2(558, 496)
 scale = Vector2(1, 0.7219917)
@@ -36,7 +34,7 @@ position = Vector2(581, 154)
 position = Vector2(1004, 395)
 script = ExtResource("2_cgsx8")
 itemResource = ExtResource("3_d5tbn")
-itemManager = NodePath("../ItemManager")
+itemManager = NodePath("..")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=289722686]
 position = Vector2(0, 0.5)
@@ -50,3 +48,5 @@ texture = ExtResource("2_7p2em")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D/Area2D" unique_id=718976739]
 shape = SubResource("RectangleShape2D_m7v3l")
+
+[node name="ItemManager" parent="." unique_id=1526338948 instance=ExtResource("1_1geca")]
