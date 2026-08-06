@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cbfxg42sgt0wg"
+path="res://.godot/imported/interactable.dialogue-04ed4b6c50c92cf08a975d873f45542c.tres"
+
+[deps]
+
+source_file="res://Gyms/Derek/interactable.dialogue"
+dest_files=["res://.godot/imported/interactable.dialogue-04ed4b6c50c92cf08a975d873f45542c.tres"]
+
+[params]
+
+defaults=true

@@ -1,5 +1,8 @@
 extends RigidBody3D
 
+@export var dialogueBalloon:PackedScene
+@export var dialogueResource:DialogueResource
+@export var dialogueTitle:String
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -12,4 +15,7 @@ func _process(delta: float) -> void:
 	
 func _trigger_interaction():
 	print("Interaction Triggered")
+	DialogueManager.show_dialogue_balloon_scene(
+			dialogueBalloon.resource_path, load(dialogueResource.resource_path), dialogueTitle
+			)
 	pass

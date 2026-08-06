@@ -3,6 +3,8 @@
 [ext_resource type="Script" uid="uid://bwiedhyp3jtcj" path="res://Gyms/Derek/character_controller.gd" id="1_etf08"]
 [ext_resource type="Script" uid="uid://d4kim4ag13lky" path="res://Gyms/Derek/interaction_check.gd" id="2_y3rlt"]
 [ext_resource type="Script" uid="uid://8btui238plb0" path="res://Gyms/Derek/interactable_object.gd" id="3_y3rlt"]
+[ext_resource type="PackedScene" uid="uid://dgtmebegip1t2" path="res://Gyms/Taq/Dialogue/ItemUI.tscn" id="4_m1g68"]
+[ext_resource type="Resource" uid="uid://cbfxg42sgt0wg" path="res://Gyms/Derek/interactable.dialogue" id="5_xmq84"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_4uacu"]
 
@@ -70,6 +72,9 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 6.86
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.8690155)
 gravity_scale = 0.0
 script = ExtResource("3_y3rlt")
+dialogueBalloon = ExtResource("4_m1g68")
+dialogueResource = ExtResource("5_xmq84")
+dialogueTitle = "start"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D" unique_id=700073095]
 shape = SubResource("BoxShape3D_eacaq")
