@@ -5,6 +5,8 @@
 [ext_resource type="Script" uid="uid://7qg61do5v7u3" path="res://Gyms/Taq/Scenes/ItemUITrigger.gd" id="2_cgsx8"]
 [ext_resource type="PackedScene" uid="uid://dgtmebegip1t2" path="res://Gyms/Taq/Dialogue/ItemUI.tscn" id="3_1geca"]
 [ext_resource type="Resource" uid="uid://xl1b3aex0m2" path="res://Gyms/Taq/Dialogue/Item.dialogue" id="4_d5tbn"]
+[ext_resource type="Script" uid="uid://ckg27hmh36ynb" path="res://Gyms/Taq/UI/itemManager.gd" id="6_d5tbn"]
+[ext_resource type="PackedScene" uid="uid://b3lu7gljfdhf2" path="res://Gyms/Taq/UI/itemUIOverlay.tscn" id="7_bjfdl"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_t1pbf"]
 
@@ -49,3 +51,7 @@ texture = ExtResource("2_7p2em")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D/Area2D" unique_id=718976739]
 shape = SubResource("RectangleShape2D_m7v3l")
+
+[node name="ItemManager" type="Node" parent="." unique_id=1032109028]
+script = ExtResource("6_d5tbn")
+itemUI = ExtResource("7_bjfdl")
