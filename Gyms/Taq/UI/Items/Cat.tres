@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="itemResource" format=3 uid="uid://bjf3yowpb67at"]
+[gd_resource type="Resource" script_class="ItemResource" format=3 uid="uid://bjf3yowpb67at"]
 
 [ext_resource type="Texture2D" uid="uid://ckp7wn5gqefxc" path="res://Gyms/Taq/UI/cat.jpg" id="1_76al0"]
 [ext_resource type="Script" uid="uid://bqr2o55q8omtd" path="res://Gyms/Taq/UI/itemResource.gd" id="2_bugdi"]

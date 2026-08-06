@@ -42,6 +42,7 @@ _data = {
 
 [node name="ItemUIOverlay" type="CanvasLayer" unique_id=2110651882]
 process_mode = 3
+layer = 100
 script = ExtResource("1_mlgc2")
 item = ExtResource("2_j1wm0")
 
