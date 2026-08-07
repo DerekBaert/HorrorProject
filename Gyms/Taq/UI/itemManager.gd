@@ -13,6 +13,7 @@ func _onItemUITriggered(resource) -> void:
 	
 	print("Resource: ", resource)
 	var UI = itemUI.instantiate()
+	UI.item = resource
 	print("UI: ", UI)
 	add_child(UI)
 	#print("Child count now: ", get_child_count())

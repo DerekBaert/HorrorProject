@@ -1,10 +1,11 @@
 [gd_scene format=3 uid="uid://cn0h6ql801lt8"]
 
-[ext_resource type="PackedScene" uid="uid://b8julmgy36rlt" path="res://Gyms/Taq/UI/ItemManager.tscn" id="1_1geca"]
 [ext_resource type="PackedScene" uid="uid://kssbl0dy053q" path="res://Gyms/Taq/Actors/character.tscn" id="1_lghcy"]
 [ext_resource type="Texture2D" uid="uid://dcw8u5ulsr657" path="res://icon.svg" id="2_7p2em"]
 [ext_resource type="Script" uid="uid://7qg61do5v7u3" path="res://Gyms/Taq/Scenes/ItemUITrigger.gd" id="2_cgsx8"]
 [ext_resource type="Resource" uid="uid://bjf3yowpb67at" path="res://Gyms/Taq/UI/Items/Cat.tres" id="3_d5tbn"]
+[ext_resource type="Resource" uid="uid://cod7bhn5n01pn" path="res://Gyms/Taq/UI/Items/Godot.tres" id="5_d5tbn"]
+[ext_resource type="PackedScene" uid="uid://y5ky31pbike1" path="res://Gyms/Taq/UI/itemUILayer.tscn" id="6_d5tbn"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_t1pbf"]
 
@@ -27,14 +28,15 @@ polygon = PackedVector2Array(-41, 434, 1180, 434, 1180, 672, -46, 675)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ground" unique_id=1933742365]
 shape = SubResource("WorldBoundaryShape2D_t1pbf")
 
-[node name="Character" parent="." unique_id=1837472615 instance=ExtResource("1_lghcy")]
+[node name="Character" parent="." unique_id=1837472615 node_paths=PackedStringArray("itemUILayer") instance=ExtResource("1_lghcy")]
 position = Vector2(581, 154)
+itemUILayer = NodePath("../ItemUILayer")
 
-[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=1474540217 node_paths=PackedStringArray("itemManager") groups=["Interactable"]]
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=1474540217 node_paths=PackedStringArray("itemUILayer") groups=["Interactable"]]
 position = Vector2(1004, 395)
 script = ExtResource("2_cgsx8")
 itemResource = ExtResource("3_d5tbn")
-itemManager = NodePath("..")
+itemUILayer = NodePath("../ItemUILayer")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=289722686]
 position = Vector2(0, 0.5)
@@ -49,4 +51,23 @@ texture = ExtResource("2_7p2em")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D/Area2D" unique_id=718976739]
 shape = SubResource("RectangleShape2D_m7v3l")
 
-[node name="ItemManager" parent="." unique_id=1526338948 instance=ExtResource("1_1geca")]
+[node name="RigidBody2D2" type="RigidBody2D" parent="." unique_id=57719138 node_paths=PackedStringArray("itemUILayer") groups=["Interactable"]]
+position = Vector2(187, 395)
+script = ExtResource("2_cgsx8")
+itemResource = ExtResource("5_d5tbn")
+itemUILayer = NodePath("../ItemUILayer")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D2" unique_id=2134054068]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_s1u34")
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D2" unique_id=1065000382]
+modulate = Color(18.892157, 12.130976, 14.384704, 1)
+texture = ExtResource("2_7p2em")
+
+[node name="Area2D" type="Area2D" parent="RigidBody2D2" unique_id=1145659412]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D2/Area2D" unique_id=176489189]
+shape = SubResource("RectangleShape2D_m7v3l")
+
+[node name="ItemUILayer" parent="." unique_id=2110651882 instance=ExtResource("6_d5tbn")]

@@ -1,4 +1,5 @@
 extends CanvasLayer
+class_name ItemUIOverlay
 
 @onready var closeButton: Button = $Control/MarginContainer/VBoxContainer/HBoxContainer2/CloseButton
 @onready var animationPlayer: AnimationPlayer = $AnimationPlayer
@@ -10,8 +11,9 @@ extends CanvasLayer
 
 func _ready() -> void:
 	animationPlayer.play("FadeIn")
-	get_tree().paused = true
+	#get_tree().paused = true
 	updateItem()
+	await get_tree().create_timer(3).timeout
 	closeButton.grab_focus()
 	closeButton.pressed.connect(_onCloseButtonPressed)
 
@@ -34,5 +36,5 @@ func updateItem() -> void:
 
 # Remove the item overlay
 func _onCloseButtonPressed() -> void:
-	get_tree().paused = false
+	#get_tree().paused = false
 	queue_free()

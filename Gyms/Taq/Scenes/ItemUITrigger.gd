@@ -2,11 +2,12 @@ extends RigidBody2D
 
 @onready var area2d: Area2D = $Area2D
 @export var itemResource: ItemResource
-@export var itemManager:ItemManager
+@export var itemUILayer:ItemUILayer
 
 
 func interacted() -> void:
-	itemManager.itemUITriggered.emit(itemResource)
+	itemUILayer.itemUITriggered.emit(itemResource)
+
 
 
 #====================================================
