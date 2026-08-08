@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b3lu7gljfdhf2"]
 
-[ext_resource type="Script" uid="uid://b1oh7lnx5wtb8" path="res://Gyms/Taq/UI/*Attempts*/itemUIOverlay.gd" id="1_mlgc2"]
+[ext_resource type="Script" uid="uid://b1oh7lnx5wtb8" path="res://Gyms/Taq/UI/*Attempts*/ItemUIOverlay.gd" id="1_mlgc2"]
 [ext_resource type="Texture2D" uid="uid://bf5qouyju4j1g" path="res://Gyms/Taq/icon.svg" id="2_b3ka8"]
 [ext_resource type="Resource" uid="uid://cod7bhn5n01pn" path="res://Gyms/Taq/UI/Items/Godot.tres" id="2_j1wm0"]
 

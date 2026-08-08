@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://y5ky31pbike1"]
 
-[ext_resource type="Script" uid="uid://n47s3lsi3lpu" path="res://Gyms/Taq/UI/itemUILayer.gd" id="1_ukljb"]
+[ext_resource type="Script" uid="uid://n47s3lsi3lpu" path="res://Gyms/Taq/UI/ItemUILayer.gd" id="1_ukljb"]
+[ext_resource type="Theme" uid="uid://ycipny2kjt68" path="res://Gyms/Taq/UI/BasicUITheme.tres" id="2_gs1xg"]
 [ext_resource type="Texture2D" uid="uid://bf5qouyju4j1g" path="res://Gyms/Taq/icon.svg" id="3_gxgkl"]
 
 [sub_resource type="Animation" id="Animation_mlgc2"]
@@ -53,6 +54,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("2_gs1xg")
 metadata/_edit_use_anchors_ = true
 
 [node name="ItemUIBG" type="ColorRect" parent="Control" unique_id=1279987354]

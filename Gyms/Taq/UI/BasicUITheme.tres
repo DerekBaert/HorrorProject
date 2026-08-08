@@ -1,7 +1,17 @@
 [gd_resource type="Theme" format=3 uid="uid://ycipny2kjt68"]
 
+[ext_resource type="FontFile" uid="uid://bx4qv66hvpyyl" path="res://Gyms/Taq/UI/Font/Inconsolata-VariableFont_wdth,wght.ttf" id="1_pgd2n"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fter8"]
 bg_color = Color(0, 0, 0, 0.78431374)
 
 [resource]
+Button/font_sizes/font_size = 22
+Button/fonts/font = ExtResource("1_pgd2n")
+MarginContainer/constants/margin_bottom = 20
+MarginContainer/constants/margin_left = 30
+MarginContainer/constants/margin_right = 30
+MarginContainer/constants/margin_top = 20
 PanelContainer/styles/panel = SubResource("StyleBoxFlat_fter8")
+RichTextLabel/font_sizes/normal_font_size = 22
+RichTextLabel/fonts/normal_font = ExtResource("1_pgd2n")

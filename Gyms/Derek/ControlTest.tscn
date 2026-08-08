@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://bwiedhyp3jtcj" path="res://Gyms/Derek/character_controller.gd" id="1_etf08"]
 [ext_resource type="Script" uid="uid://d4kim4ag13lky" path="res://Gyms/Derek/interaction_check.gd" id="2_y3rlt"]
 [ext_resource type="Script" uid="uid://8btui238plb0" path="res://Gyms/Derek/interactable_object.gd" id="3_y3rlt"]
-[ext_resource type="PackedScene" uid="uid://dgtmebegip1t2" path="res://Gyms/Taq/Dialogue/ItemUI.tscn" id="4_m1g68"]
+[ext_resource type="PackedScene" uid="uid://dgtmebegip1t2" path="res://Gyms/Taq/UI/Items/ItemUI.tscn" id="4_m1g68"]
 [ext_resource type="Resource" uid="uid://cbfxg42sgt0wg" path="res://Gyms/Derek/interactable.dialogue" id="5_xmq84"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_4uacu"]

@@ -1,13 +1,31 @@
 
 === QUICK NOTE =========================================
 
-## To trigger dialogue
 
-DialogueManager.show_dialogue_balloon_scene(PATH TO DIALOGUE BALLOON (String), load(PATH TO DIALOGUE FILE (String)), NAME OF DIALOGUE TITLE (String))
-
-
-## Item Interaction Note:
+### Item Interaction Note:
+	
+	* This is made in 2D so some code needs to be converted into 3D compatible (e.g. Area2D => Area3D)
 	
 	- The Player object should be in the global "Player" group
 	- Interactable objects should be in the global "Interactable" group
 	- ItemUILayer scene should be present in every game scene that uses it (We could make it global but it will be always sitting on the RAM space)
+	- Each interaction is handled via the GlobalSignalAndState global(singleton)
+
+	- Interactable items needs to have A)ItemUITrigger.gd script and B)an individual ItemResource assigned to the exported filed
+	- Player scripts needs interaction-specific code (Please check character.gd)
+
+
+
+
+### Dialogue Trigger script:
+	
+	Basically, upon any interaction that should trigger dialogue, the script is calling this global function:
+	
+		DialogueManager.show_dialogue_balloon_scene(PATH TO DIALOGUE BALLOON (String), load(PATH TO DIALOGUE FILE (String)), NAME OF DIALOGUE TITLE (String))
+		
+	In the dialogue file, we can manipulate the global functions and variables. 
+	For example, the example dialogue is doing:
+		
+		do GlobalSignalAndState.canMove = true
+		
+	at the end of the dialogue chunk. 

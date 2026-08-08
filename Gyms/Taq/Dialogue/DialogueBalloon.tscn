@@ -3,66 +3,8 @@
 [ext_resource type="Script" uid="uid://qytq1ukqrome" path="res://Gyms/Taq/Dialogue/DialogueBalloon.gd" id="1_efj8h"]
 [ext_resource type="Resource" uid="uid://dl5nifbvguey1" path="res://Gyms/Taq/Dialogue/Dialogue.dialogue" id="2_efj8h"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="3_hk5pl"]
+[ext_resource type="Theme" uid="uid://ycipny2kjt68" path="res://Gyms/Taq/UI/BasicUITheme.tres" id="3_txxja"]
 [ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/dialogue_responses_menu.gd" id="4_j7kkk"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spyqn"]
-bg_color = Color(0, 0, 0, 1)
-border_width_left = 3
-border_width_top = 3
-border_width_right = 3
-border_width_bottom = 3
-border_color = Color(0.329412, 0.329412, 0.329412, 1)
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ri4m3"]
-bg_color = Color(0.121569, 0.121569, 0.121569, 1)
-border_width_left = 3
-border_width_top = 3
-border_width_right = 3
-border_width_bottom = 3
-border_color = Color(1, 1, 1, 1)
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e0njw"]
-bg_color = Color(0, 0, 0, 1)
-border_width_left = 3
-border_width_top = 3
-border_width_right = 3
-border_width_bottom = 3
-border_color = Color(0.6, 0.6, 0.6, 1)
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qkmqt"]
-bg_color = Color(0, 0, 0, 1)
-border_width_left = 3
-border_width_top = 3
-border_width_right = 3
-border_width_bottom = 3
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-
-[sub_resource type="Theme" id="Theme_qq3yp"]
-default_font_size = 20
-Button/styles/disabled = SubResource("StyleBoxFlat_spyqn")
-Button/styles/focus = SubResource("StyleBoxFlat_ri4m3")
-Button/styles/hover = SubResource("StyleBoxFlat_e0njw")
-Button/styles/normal = SubResource("StyleBoxFlat_e0njw")
-MarginContainer/constants/margin_bottom = 15
-MarginContainer/constants/margin_left = 30
-MarginContainer/constants/margin_right = 30
-MarginContainer/constants/margin_top = 15
-PanelContainer/styles/panel = SubResource("StyleBoxFlat_qkmqt")
 
 [sub_resource type="Animation" id="Animation_nlsx6"]
 length = 0.001
@@ -113,7 +55,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = SubResource("Theme_qq3yp")
+theme = ExtResource("3_txxja")
 
 [node name="MarginContainer" type="MarginContainer" parent="Balloon" unique_id=1011109179]
 layout_mode = 1
@@ -191,6 +133,7 @@ response_template = NodePath("ResponseExample")
 
 [node name="ResponseExample" type="Button" parent="Balloon/ResponsesMenu" unique_id=914537232]
 layout_mode = 2
+theme = ExtResource("3_txxja")
 text = "Response example"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1116280512]

@@ -9,11 +9,8 @@ class_name ItemUILayer
 @onready var itemDescription: RichTextLabel = $Control/MarginContainer/VBoxContainer/HBoxContainer/MarginContainer/ItemDescription
 @onready var itemImage: TextureRect = $Control/MarginContainer/VBoxContainer/HBoxContainer/MarginContainer2/ItemImage
 
-signal itemUITriggered
-signal itemUIHidden
-
 func _ready() -> void:
-	itemUITriggered.connect(_onItemUITriggered)
+	GlobalSignalAndState.itemUITriggered.connect(_onItemUITriggered)
 	closeButton.pressed.connect(_onCloseButtonPressed)
 	control.hide()
 
@@ -42,7 +39,7 @@ func updateItem(resource:ItemResource) -> void:
 	else:
 		return
 
-## Remove the item overlay
+# Disable the item overlay
 func _onCloseButtonPressed() -> void:
-	itemUIHidden.emit()
+	GlobalSignalAndState.itemUIHidden.emit()
 	control.hide()
