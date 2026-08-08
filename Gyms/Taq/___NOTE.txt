@@ -4,3 +4,10 @@
 ## To trigger dialogue
 
 DialogueManager.show_dialogue_balloon_scene(PATH TO DIALOGUE BALLOON (String), load(PATH TO DIALOGUE FILE (String)), NAME OF DIALOGUE TITLE (String))
+
+
+## Item Interaction Note:
+	
+	- The Player object should be in the global "Player" group
+	- Interactable objects should be in the global "Interactable" group
+	- ItemUILayer scene should be present in every game scene that uses it (We could make it global but it will be always sitting on the RAM space)
