@@ -1,8 +1,0 @@
-[gd_scene format=3 uid="uid://b8julmgy36rlt"]
-
-[ext_resource type="Script" uid="uid://ckg27hmh36ynb" path="res://Gyms/Taq/UI/*Attempts*/ItemManager.gd" id="1_58wj8"]
-[ext_resource type="PackedScene" uid="uid://b3lu7gljfdhf2" path="res://Gyms/Taq/UI/*Attempts*/ItemUIOverlay.tscn" id="2_jpa66"]
-
-[node name="ItemManager" type="Node2D" unique_id=1526338948]
-script = ExtResource("1_58wj8")
-itemUI = ExtResource("2_jpa66")
