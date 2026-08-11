@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://t4v7nx8ognp2"]
+
+[ext_resource type="Script" uid="uid://bwiedhyp3jtcj" path="res://Gyms/Derek/character_controller.gd" id="1_jihde"]
+[ext_resource type="Script" uid="uid://d4kim4ag13lky" path="res://Gyms/Derek/interaction_check.gd" id="2_uvuc0"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_4uacu"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_etf08"]
+albedo_color = Color(0.9704502, 0.46969372, 0.3443811, 1)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_y6er7"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_1vivr"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_elk6i"]
+albedo_color = Color(0.7574537, 0.36215967, 0.26255804, 1)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_eacaq"]
+
+[node name="CharacterBody3D" type="CharacterBody3D" unique_id=52006111]
+script = ExtResource("1_jihde")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=90302390]
+mesh = SubResource("CapsuleMesh_4uacu")
+surface_material_override/0 = SubResource("StandardMaterial3D_etf08")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=714253928]
+shape = SubResource("CapsuleShape3D_y6er7")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=1099864530]
+transform = Transform3D(0.31160665, 0, 0, 0, 0.3131072, 0, 0, 0, 0.47868586, 0, 0.45191658, -0.7639488)
+mesh = SubResource("BoxMesh_1vivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_elk6i")
+
+[node name="ShapeCast3D" type="ShapeCast3D" parent="." unique_id=1314873938]
+transform = Transform3D(-6.556708e-08, 0, 2, 0, 1.5, 0, -1.5, 0, -8.742278e-08, 0, 0, 0)
+shape = SubResource("SphereShape3D_eacaq")
+target_position = Vector3(0.75, 0, 0)
+script = ExtResource("2_uvuc0")

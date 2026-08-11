@@ -29,6 +29,10 @@ runtime/balloon_path="res://Gyms/Taq/Dialogue/DialogueBalloon.tscn"
 
 enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg", "res://addons/phantom_camera/plugin.cfg")
 
+[filesystem]
+
+import/blender/enabled=false
+
 [global_group]
 
 Player=""

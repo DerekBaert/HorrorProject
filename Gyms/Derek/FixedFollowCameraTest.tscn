@@ -52,7 +52,7 @@ shape = SubResource("CapsuleShape3D_37kl0")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1840603833]
 physics_interpolation_mode = 1
-transform = Transform3D(1, 0, 0, 0, 0.9985774, 0.053320684, 0, -0.053320684, 0.9985774, 0, 2, 6.014)
+transform = Transform3D(1, 0, 0, 0, 0.9979439, 0.06409343, 0, -0.06409343, 0.9979439, 0, 2, 5)
 top_level = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera3D" unique_id=2058109076]
@@ -62,11 +62,11 @@ script = ExtResource("2_qrhyx")
 metadata/_custom_type_script = "uid://bd046eokvcnu2"
 
 [node name="PhantomCamera3D" type="Node3D" parent="." unique_id=779137854 node_paths=PackedStringArray("follow_target", "follow_path", "look_at_target")]
-transform = Transform3D(0.99991393, 0, 0, 0, 0.9985556, 0.05328949, 0, -0.053319518, 0.99799323, 0, 2, 6.014)
+transform = Transform3D(0.99991393, 0, 0, 0, 0.99792117, 0.064055935, 0, -0.06409197, 0.99736005, 0, 2, 5)
 top_level = true
 script = ExtResource("3_1ydto")
-follow_mode = 1
-follow_target = NodePath("../FixedPoint")
+follow_mode = 4
+follow_target = NodePath("../CharacterBody3D")
 follow_path = NodePath("../Path3D")
 look_at_mode = 2
 look_at_target = NodePath("../CharacterBody3D")
