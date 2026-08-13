@@ -1,0 +1,21 @@
+~ start
+Rot: Trouble sleeping?
+Andrew: What is.. Where am I?
+	#The Rot looks around, as if seeing the room for the first time
+Rot: Good question! Where do you suppose we are?
+Andrew: I suppose… I’m in a dream. 
+	#Andrew turns to leave
+Rot: Leaving so soon? Weren’t you looking for something?
+	#Andrew scoffs
+- Like what?
+	Andrew: Like what? A way out of this mess?
+	#The Rot cocks his head in a curious manner
+	Rot: No, this.
+- How do you know?
+	Andrew: Huh? How do you know?
+	Rot: I just know. Here.
+do GlobalSignalAndState.notificationTriggered.emit("Obtained: A Can of Beer")
+	#The Rot holds out a beer.
+Andrew: Oh, yea…
+	#Andrew takes the beer
+=> END

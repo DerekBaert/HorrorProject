@@ -2,12 +2,17 @@
 
 [ext_resource type="FontFile" uid="uid://bx4qv66hvpyyl" path="res://Gyms/Taq/UI/Font/Inconsolata-VariableFont_wdth,wght.ttf" id="1_pgd2n"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bcvd6"]
+bg_color = Color(0, 0, 0, 0.8627451)
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fter8"]
-bg_color = Color(0, 0, 0, 0.78431374)
+bg_color = Color(0, 0, 0, 0.8627451)
+border_color = Color(0.8, 0.8, 0.8, 0)
 
 [resource]
 Button/font_sizes/font_size = 22
 Button/fonts/font = ExtResource("1_pgd2n")
+Button/styles/normal = SubResource("StyleBoxFlat_bcvd6")
 MarginContainer/constants/margin_bottom = 20
 MarginContainer/constants/margin_left = 30
 MarginContainer/constants/margin_right = 30

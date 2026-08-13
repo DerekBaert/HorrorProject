@@ -1,0 +1,20 @@
+~ start
+Rot: Thought you wanted out
+Andrew: How do I get out of here!?
+Rot: The same way you came in, you sure you’re okay? Come on, let’s talk it out, it might be good to let someone in.
+Andrew: Stop fucking with me, tell me what this is! 
+	#The Rot laughs
+Rot: That’s what I am trying to find out! 
+Andrew: What are you talking about?
+Rot: I can tell you’re holding so much back Andrew.
+Andrew: …How do you know my name?
+Rot: I’ll admit, I know some things. Surface level things. Names, dates, addresses. But the deep down stuff, that’s a bit different. 
+Andrew: …what do you want from me?
+Rot: I just want what’s best for you,  Andy, inside of you there’s a dam, holding back all that pain, that regret. But there are cracks. You seal a crack and another one appears, it’s hard to keep up, isn’t it? Wouldn’t it just be easier to let it all out? Let it just… wash over you? Drown you?
+	#At the word ‘drown’ Andrew recoils in fear.
+Rot: Ah, there’s a crack. 
+	#The Rot moves unnaturally fast and gets close to Andrew, examining him
+Rot: Now, what is it that’s leaking out? Drip… drip…
+	#Andrew flees from the room.
+
+=> END

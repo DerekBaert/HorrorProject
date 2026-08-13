@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bgsy3gfaepx6v"
+path="res://.godot/imported/5thMeeting.dialogue-f15c53b215a6bc75223c31b3c23d2747.tres"
+
+[deps]
+
+source_file="res://Gyms/Taq/Dialogue/5thMeeting.dialogue"
+dest_files=["res://.godot/imported/5thMeeting.dialogue-f15c53b215a6bc75223c31b3c23d2747.tres"]
+
+[params]
+
+defaults=true

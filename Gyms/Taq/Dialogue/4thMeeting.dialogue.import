@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://slgxr4k2s8ad"
+path="res://.godot/imported/4thMeeting.dialogue-4421c6e1fba81e87340b0915072ab05e.tres"
+
+[deps]
+
+source_file="res://Gyms/Taq/Dialogue/4thMeeting.dialogue"
+dest_files=["res://.godot/imported/4thMeeting.dialogue-4421c6e1fba81e87340b0915072ab05e.tres"]
+
+[params]
+
+defaults=true

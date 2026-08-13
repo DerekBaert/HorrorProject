@@ -1,0 +1,15 @@
+~ start
+Rot: Back already? 
+Andrew: Okay seriously, what is this? 
+	#The Rot shrugs
+Rot: You tell me buddy, you’re the local after all, I just blew in from out of town!
+Andrew: It’s just a dream, a weird one but at least it’s not a bad one…
+Rot: Yea? Been having a lot of those have you? Wanna talk about it? Might help!
+	#Andrew laughs
+Andrew: No thanks, this doesn’t exactly look like a shrink’s office.
+	#Andrew goes to leave
+Rot: Hey hold on, last time you mentioned ‘finding a way out of this mess,’ what ‘mess’ did you mean, exactly?
+Andrew: A way out of this dream, obviously.
+Rot: Right, sure of course. Well hey, doors right there, maybe it’ll work this time!
+	#Andrew leaves
+=> END

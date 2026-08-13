@@ -8,7 +8,8 @@
 [ext_resource type="Script" uid="uid://bwkqhu4j3bm07" path="res://Gyms/Taq/Dialogue/DialogueTrigger.gd" id="6_bjfdl"]
 [ext_resource type="PackedScene" uid="uid://y5ky31pbike1" path="res://Gyms/Taq/UI/ItemUILayer.tscn" id="6_d5tbn"]
 [ext_resource type="PackedScene" uid="uid://b1om873bh74e" path="res://Gyms/Taq/Dialogue/DialogueBalloon.tscn" id="7_4343y"]
-[ext_resource type="Resource" uid="uid://dl5nifbvguey1" path="res://Gyms/Taq/Dialogue/Dialogue.dialogue" id="8_bcvd6"]
+[ext_resource type="Resource" uid="uid://b61y7rkqo3tq8" path="res://Gyms/Taq/Dialogue/1stMeeting.dialogue" id="8_4343y"]
+[ext_resource type="Script" uid="uid://ctvoc401kljyr" path="res://Gyms/Taq/UI/Items/Notification.gd" id="10_bcvd6"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_t1pbf"]
 
@@ -17,6 +18,67 @@ size = Vector2(112, 119)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m7v3l"]
 size = Vector2(162, 90)
+
+[sub_resource type="Animation" id="Animation_bcvd6"]
+resource_name = "Notify"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4666667, 4.5666666, 5),
+"transitions": PackedFloat32Array(0.40612623, 0.40612623, 1.8025013, 1.8025013),
+"update": 0,
+"values": [Vector2(-133, 304), Vector2(30, 304), Vector2(30, 304), Vector2(79, 304)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ColorRect:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.46, 4.56, 5),
+"transitions": PackedFloat32Array(2.297397, 2.297397, 0.32987696, 0.32987696),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_4d280"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-133, 304)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ColorRect:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rg3vq"]
+_data = {
+&"Notify": SubResource("Animation_bcvd6"),
+&"RESET": SubResource("Animation_4d280")
+}
 
 [node name="Playground" type="Node2D" unique_id=106182145]
 
@@ -74,7 +136,7 @@ shape = SubResource("RectangleShape2D_m7v3l")
 position = Vector2(386, 391)
 script = ExtResource("6_bjfdl")
 dialogueBalloon = ExtResource("7_4343y")
-dialogueResource = ExtResource("8_bcvd6")
+dialogueResource = ExtResource("8_4343y")
 dialogueCue = "start"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DialogueTrigger" unique_id=656436445]
@@ -91,3 +153,46 @@ texture = ExtResource("2_7p2em")
 shape = SubResource("RectangleShape2D_m7v3l")
 
 [node name="ItemUILayer" parent="." unique_id=2110651882 instance=ExtResource("6_d5tbn")]
+visible = false
+
+[node name="Notification" type="Control" parent="." unique_id=699657344]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1150.0
+offset_bottom = 648.0
+script = ExtResource("10_bcvd6")
+
+[node name="ColorRect" type="ColorRect" parent="Notification" unique_id=93405798]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -133.0
+offset_top = -20.0
+offset_right = 141.0
+offset_bottom = 20.0
+grow_vertical = 2
+color = Color(0, 0.12941177, 0.6627451, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="Notification/ColorRect" unique_id=1373825074]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Label" type="Label" parent="Notification/ColorRect/MarginContainer" unique_id=1917632871]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Obtained Beer"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Notification" unique_id=949633923]
+libraries/ = SubResource("AnimationLibrary_rg3vq")
