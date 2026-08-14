@@ -1,3 +1,4 @@
 ~ start
 The man is gone. In the chair where he sat, is instead a key, and a note.
+do GlobalSignalAndState.canMove = true
 => END

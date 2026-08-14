@@ -4,6 +4,7 @@
 [ext_resource type="Resource" uid="uid://dl5nifbvguey1" path="res://Gyms/Taq/Dialogue/Dialogue.dialogue" id="2_efj8h"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="3_hk5pl"]
 [ext_resource type="Theme" uid="uid://ycipny2kjt68" path="res://Gyms/Taq/UI/BasicUITheme.tres" id="3_txxja"]
+[ext_resource type="Texture2D" uid="uid://cp554pu0mjbhn" path="res://Gyms/Taq/Asset/DialogueBGTexture.png" id="4_hk5pl"]
 [ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/dialogue_responses_menu.gd" id="4_j7kkk"]
 
 [sub_resource type="Animation" id="Animation_nlsx6"]
@@ -57,15 +58,36 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("3_txxja")
 
+[node name="TextureRect" type="TextureRect" parent="Balloon" unique_id=1727329979]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -960.0
+offset_top = -595.0
+offset_right = 960.0
+offset_bottom = 485.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.6, 0.2)
+pivot_offset = Vector2(960, 540)
+texture = ExtResource("4_hk5pl")
+
 [node name="MarginContainer" type="MarginContainer" parent="Balloon" unique_id=1011109179]
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -219.0
+offset_top = -174.0
 grow_horizontal = 2
 grow_vertical = 0
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
 
 [node name="PanelContainer" type="PanelContainer" parent="Balloon/MarginContainer" unique_id=810051587]
 clip_children = 2
@@ -74,6 +96,9 @@ mouse_filter = 1
 
 [node name="MarginContainer" type="MarginContainer" parent="Balloon/MarginContainer/PanelContainer" unique_id=1030936092]
 layout_mode = 2
+theme_override_constants/margin_left = 100
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 100
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Balloon/MarginContainer/PanelContainer/MarginContainer" unique_id=1428277592]
 layout_mode = 2
@@ -84,6 +109,7 @@ size_flags_horizontal = 3
 
 [node name="CharacterLabel" type="RichTextLabel" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer/VBoxContainer" unique_id=507199029]
 unique_name_in_owner = true
+visible = false
 modulate = Color(1, 1, 1, 0.501961)
 layout_mode = 2
 mouse_filter = 1
@@ -94,9 +120,11 @@ scroll_active = false
 
 [node name="DialogueLabel" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer/VBoxContainer" unique_id=1225160028 instance=ExtResource("3_hk5pl")]
 unique_name_in_owner = true
+z_index = 1
 layout_mode = 2
 size_flags_vertical = 3
 text = "Dialogue..."
+horizontal_alignment = 1
 
 [node name="Control" type="Control" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer" unique_id=1162966119]
 custom_minimum_size = Vector2(20, 10)
@@ -119,10 +147,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -87.0
-offset_top = 42.0
-offset_right = 494.0
-offset_bottom = 112.0
+offset_left = -98.0
+offset_top = 75.0
+offset_right = 483.0
+offset_bottom = 145.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_vertical = 8

@@ -18,4 +18,5 @@ do GlobalSignalAndState.notificationTriggered.emit("Obtained: A Can of Beer")
 	#The Rot holds out a beer.
 Andrew: Oh, yea…
 	#Andrew takes the beer
+do GlobalSignalAndState.canMove = true
 => END

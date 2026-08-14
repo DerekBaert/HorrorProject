@@ -9,4 +9,5 @@ Andrew: What do you mean?
 Rot: To wake up.
 Andrew: Whatever man, just let me out of here.
 Rot: Door’s right there.
+do GlobalSignalAndState.canMove = true
 => END

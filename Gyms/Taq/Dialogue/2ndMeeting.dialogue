@@ -12,4 +12,5 @@ Rot: Hey hold on, last time you mentioned ‘finding a way out of this mess,’ 
 Andrew: A way out of this dream, obviously.
 Rot: Right, sure of course. Well hey, doors right there, maybe it’ll work this time!
 	#Andrew leaves
+do GlobalSignalAndState.canMove = true
 => END

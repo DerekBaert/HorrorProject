@@ -16,5 +16,6 @@ Rot: Ah, there’s a crack.
 	#The Rot moves unnaturally fast and gets close to Andrew, examining him
 Rot: Now, what is it that’s leaking out? Drip… drip…
 	#Andrew flees from the room.
+do GlobalSignalAndState.canMove = true
 
 => END

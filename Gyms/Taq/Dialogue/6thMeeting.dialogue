@@ -11,4 +11,5 @@ Rot: See? Doesn’t that feel better now? There’s nothing wrong with giving in
 Andrew: No.. she wouldn’t want me to.
 	#The Rot sighs, frustrated that Andrew is not letting go.
 Rot: And we were getting so close… but fine, have it your way.
+do GlobalSignalAndState.canMove = true
 => END

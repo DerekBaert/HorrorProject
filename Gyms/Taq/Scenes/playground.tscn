@@ -27,6 +27,7 @@ scale = Vector2(1, 0.7219917)
 
 [node name="Ground" type="Polygon2D" parent="Ground" unique_id=1274505048]
 position = Vector2(-534, -435.38504)
+color = Color(0.25300652, 0.25995395, 0.1821689, 1)
 polygon = PackedVector2Array(-41, 434, 1180, 434, 1180, 672, -46, 675)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ground" unique_id=1933742365]
