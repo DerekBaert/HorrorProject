@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://5cc5elfpqvjp"]
+
+[ext_resource type="Shader" uid="uid://cokrp6vo8sj1g" path="res://Gyms/Taq/Shader/GlitchShader.gdshader" id="1_0700v"]
+[ext_resource type="Script" uid="uid://cgt8dk3g786l0" path="res://Gyms/Taq/Shader/Flashback.gd" id="1_bo27e"]
+[ext_resource type="Texture2D" uid="uid://cqwnln8l1g1xj" path="res://Gyms/Taq/Shader/FlashbackImages/IMG_5996.jpg" id="3_qldyi"]
+[ext_resource type="Texture2D" uid="uid://drgcewnnn6crb" path="res://Gyms/Taq/Shader/FlashbackImages/IMG_6004.jpg" id="4_u4odk"]
+[ext_resource type="Texture2D" uid="uid://brluqtemtqgcm" path="res://Gyms/Taq/Shader/FlashbackImages/IMG_6006.jpg" id="5_j1bao"]
+[ext_resource type="Texture2D" uid="uid://dwslrm5viojoi" path="res://Gyms/Taq/Shader/FlashbackImages/Untitled_Artwork.png" id="6_104ph"]
+[ext_resource type="Texture2D" uid="uid://blstgr7xjtexn" path="res://Gyms/Taq/Shader/FlashbackImages/Image_20260607_210125_455.png" id="8_j1bao"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_s1u34"]
+shader = ExtResource("1_0700v")
+shader_parameter/shake_power = 0.1
+shader_parameter/shake_rate = 0.2
+shader_parameter/shake_speed = 100.0
+shader_parameter/shake_block_size = 100.0
+shader_parameter/shake_color_rate = 0.030000001425
+
+[node name="Flashback" type="Node2D" unique_id=1059222511]
+script = ExtResource("1_bo27e")
+flashbackImages = Array[Texture]([ExtResource("8_j1bao"), ExtResource("3_qldyi"), ExtResource("4_u4odk"), ExtResource("5_j1bao"), ExtResource("6_104ph")])
+
+[node name="FlashbackImage" type="Sprite2D" parent="." unique_id=991758917]
+position = Vector2(575, 274)
+scale = Vector2(0.6279297, 0.6279297)
+texture = ExtResource("8_j1bao")
+
+[node name="GlitchFilter" type="ColorRect" parent="." unique_id=1182559079]
+material = SubResource("ShaderMaterial_s1u34")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1150.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 2
