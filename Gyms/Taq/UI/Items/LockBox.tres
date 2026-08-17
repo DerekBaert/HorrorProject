@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemResource" format=3 uid="uid://jdtlgkk4dk3s"]
+
+[ext_resource type="Texture2D" uid="uid://bwefuntxovo2x" path="res://Gyms/Taq/UI/Items/LockBox.png" id="1_2pelj"]
+[ext_resource type="Script" uid="uid://bqr2o55q8omtd" path="res://Gyms/Taq/UI/ItemResource.gd" id="2_cl6n0"]
+
+[resource]
+script = ExtResource("2_cl6n0")
+itemName = "Lockbox"
+itemDescription = "A mysterious lockbox found on my coffee table. It has a strange pattern on it. I don't remember owning such a thing but somehow, it is alluring. I can't seem to find the key thought."
+itemImage = ExtResource("1_2pelj")
+metadata/_custom_type_script = "uid://bqr2o55q8omtd"

@@ -64,7 +64,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0, 0, 0, 0.78431374)
+color = Color(0, 0, 0, 0.8627451)
 
 [node name="MarginContainer" type="MarginContainer" parent="Control" unique_id=1312700293]
 layout_mode = 1
@@ -88,7 +88,7 @@ size_flags_vertical = 3
 [node name="MarginContainer" type="MarginContainer" parent="Control/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1915601870]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_constants/margin_left = 40
+theme_override_constants/margin_left = 60
 theme_override_constants/margin_top = 30
 theme_override_constants/margin_right = 30
 theme_override_constants/margin_bottom = 30
@@ -113,6 +113,7 @@ theme_override_constants/margin_bottom = 50
 [node name="ItemImage" type="TextureRect" parent="Control/MarginContainer/VBoxContainer/HBoxContainer/MarginContainer2" unique_id=136310468]
 layout_mode = 2
 texture = ExtResource("3_gxgkl")
+expand_mode = 4
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="Control/MarginContainer/VBoxContainer" unique_id=1408088675]
 layout_mode = 2
@@ -123,6 +124,7 @@ layout_mode = 2
 text = "Close"
 
 [node name="FadeOverlay" type="ColorRect" parent="Control" unique_id=1874946819]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0

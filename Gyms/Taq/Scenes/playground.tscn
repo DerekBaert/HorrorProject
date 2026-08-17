@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://kssbl0dy053q" path="res://Gyms/Taq/Actors/character.tscn" id="1_lghcy"]
 [ext_resource type="Texture2D" uid="uid://dcw8u5ulsr657" path="res://icon.svg" id="2_7p2em"]
 [ext_resource type="Script" uid="uid://7qg61do5v7u3" path="res://Gyms/Taq/UI/ItemUITrigger.gd" id="2_cgsx8"]
-[ext_resource type="Resource" uid="uid://bjf3yowpb67at" path="res://Gyms/Taq/UI/Items/Cat.tres" id="3_d5tbn"]
+[ext_resource type="Resource" uid="uid://jdtlgkk4dk3s" path="res://Gyms/Taq/UI/Items/LockBox.tres" id="3_4d280"]
 [ext_resource type="Resource" uid="uid://cod7bhn5n01pn" path="res://Gyms/Taq/UI/Items/Godot.tres" id="5_d5tbn"]
 [ext_resource type="Script" uid="uid://bwkqhu4j3bm07" path="res://Gyms/Taq/Dialogue/DialogueTrigger.gd" id="6_bjfdl"]
 [ext_resource type="PackedScene" uid="uid://y5ky31pbike1" path="res://Gyms/Taq/UI/ItemUILayer.tscn" id="6_d5tbn"]
@@ -40,7 +40,7 @@ position = Vector2(581, 154)
 [node name="InteractableObject" type="RigidBody2D" parent="." unique_id=1474540217 groups=["Interactable"]]
 position = Vector2(1004, 395)
 script = ExtResource("2_cgsx8")
-itemResource = ExtResource("3_d5tbn")
+itemResource = ExtResource("3_4d280")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractableObject" unique_id=289722686]
 position = Vector2(0, 0.5)
@@ -94,7 +94,6 @@ texture = ExtResource("2_7p2em")
 shape = SubResource("RectangleShape2D_m7v3l")
 
 [node name="ItemUILayer" parent="." unique_id=2110651882 instance=ExtResource("6_d5tbn")]
-visible = false
 
 [node name="Notification" parent="." unique_id=1985557452 instance=ExtResource("10_bcvd6")]
 
