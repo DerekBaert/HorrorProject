@@ -4,7 +4,7 @@
 [ext_resource type="Resource" uid="uid://dl5nifbvguey1" path="res://Gyms/Taq/Dialogue/Dialogue.dialogue" id="2_efj8h"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="3_hk5pl"]
 [ext_resource type="Theme" uid="uid://ycipny2kjt68" path="res://Gyms/Taq/UI/BasicUITheme.tres" id="3_txxja"]
-[ext_resource type="Texture2D" uid="uid://cp554pu0mjbhn" path="res://Gyms/Taq/Asset/DialogueBGTexture.png" id="4_hk5pl"]
+[ext_resource type="Texture2D" uid="uid://cp554pu0mjbhn" path="res://Gyms/Taq/Asset/Art/DialogueBGTexture.png" id="4_hk5pl"]
 [ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/dialogue_responses_menu.gd" id="4_j7kkk"]
 
 [sub_resource type="Animation" id="Animation_nlsx6"]

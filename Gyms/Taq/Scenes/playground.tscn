@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://b1om873bh74e" path="res://Gyms/Taq/Dialogue/DialogueBalloon.tscn" id="7_4343y"]
 [ext_resource type="Resource" uid="uid://b61y7rkqo3tq8" path="res://Gyms/Taq/Dialogue/1stMeeting.dialogue" id="8_4343y"]
 [ext_resource type="PackedScene" uid="uid://vtprps1fovor" path="res://Gyms/Taq/UI/Notification.tscn" id="10_bcvd6"]
+[ext_resource type="PackedScene" uid="uid://d0h6o66x7skm5" path="res://Gyms/Taq/Actors/SceneBGMPlayer.tscn" id="11_4d280"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_t1pbf"]
 
@@ -96,3 +97,5 @@ shape = SubResource("RectangleShape2D_m7v3l")
 visible = false
 
 [node name="Notification" parent="." unique_id=1985557452 instance=ExtResource("10_bcvd6")]
+
+[node name="SceneBGMPlayer" parent="." unique_id=1921477526 instance=ExtResource("11_4d280")]

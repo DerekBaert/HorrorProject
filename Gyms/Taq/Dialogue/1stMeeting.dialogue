@@ -1,6 +1,9 @@
 ~ start
+[#voice=uid://cfi8j0wwv0vu6]
 Rot: Trouble sleeping?
+[#voice=uid://ycnh8euvde5y]
 Andrew: What is.. Where am I?
+do GlobalAudio.playGlobalAudio("NA") # You need to give the path to the audio file as an argument 
 	#The Rot looks around, as if seeing the room for the first time
 Rot: Good question! Where do you suppose we are?
 Andrew: I suppose… I’m in a dream. 

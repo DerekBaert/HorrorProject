@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://d0h6o66x7skm5"]
+
+[ext_resource type="AudioStream" uid="uid://immqau0bvk34" path="res://Gyms/Taq/Asset/Audio/BGHum1.wav" id="1_7wx4g"]
+
+[node name="SceneBGMPlayer" type="AudioStreamPlayer2D" unique_id=1921477526]
+stream = ExtResource("1_7wx4g")
+autoplay = true

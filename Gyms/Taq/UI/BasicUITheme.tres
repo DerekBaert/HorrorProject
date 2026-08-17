@@ -1,7 +1,7 @@
 [gd_resource type="Theme" format=3 uid="uid://ycipny2kjt68"]
 
 [ext_resource type="FontFile" uid="uid://bx4qv66hvpyyl" path="res://Gyms/Taq/UI/Font/Inconsolata-VariableFont_wdth,wght.ttf" id="1_pgd2n"]
-[ext_resource type="Texture2D" uid="uid://ljn0v7e3xeym" path="res://Gyms/Taq/Asset/DialogueBGChoiceTexture.png" id="2_1eg4l"]
+[ext_resource type="Texture2D" uid="uid://ljn0v7e3xeym" path="res://Gyms/Taq/Asset/Art/DialogueBGChoiceTexture.png" id="2_1eg4l"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ume8h"]
 texture = ExtResource("2_1eg4l")

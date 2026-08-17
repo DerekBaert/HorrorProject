@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 PhantomCameraManager="*uid://duq6jhf6unyis"
 DialogueManager="*uid://c3rodes2l3gxb"
 GlobalSignalAndState="*uid://d1aq6gea3rt52"
+GlobalAudio="*uid://degk0p5pg3bfa"
 
 [dialogue_manager]
 
