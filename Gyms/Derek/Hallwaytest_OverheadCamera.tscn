@@ -1,7 +1,6 @@
 [gd_scene format=4 uid="uid://djgupirjlu24a"]
 
 [ext_resource type="PackedScene" uid="uid://t4v7nx8ognp2" path="res://Gyms/Derek/Character.tscn" id="1_w5m53"]
-[ext_resource type="Script" uid="uid://hq2jyw5y8gk0" path="res://Gyms/Derek/camera_3d.gd" id="2_76ol0"]
 [ext_resource type="Script" uid="uid://5yheenfy80og" path="res://Gyms/Derek/hallway_camera.gd" id="2_e8i1r"]
 [ext_resource type="Script" uid="uid://rosulqynujp8" path="res://Gyms/Derek/hallway_animation.gd" id="3_xiw5m"]
 
@@ -188,8 +187,6 @@ script = ExtResource("3_xiw5m")
 target = NodePath("../CharacterBody3D")
 endpoint = NodePath("../Door")
 
-[node name="Camera3D" type="Camera3D" parent="." unique_id=490589236 node_paths=PackedStringArray("target")]
+[node name="Camera3D" type="Camera3D" parent="." unique_id=490589236]
 physics_interpolation_mode = 1
-transform = Transform3D(0.53934455, 0.3187651, -0.77942044, 0.31876513, 0.7794204, 0.53934467, 0.7794204, -0.53934467, 0.31876498, 5.338444, 1.704005, 0.018)
-script = ExtResource("2_76ol0")
-target = NodePath("../CharacterBody3D")
+transform = Transform3D(-4.3711385e-08, 0, -1, 0, 1, 0, 0.99999994, 0, -4.371139e-08, 5.338444, 1.704005, 0.018)
