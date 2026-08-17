@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://t4v7nx8ognp2" path="res://Gyms/Derek/Character.tscn" id="1_w5m53"]
 [ext_resource type="Script" uid="uid://hq2jyw5y8gk0" path="res://Gyms/Derek/camera_3d.gd" id="2_76ol0"]
 [ext_resource type="Script" uid="uid://5yheenfy80og" path="res://Gyms/Derek/hallway_camera.gd" id="2_e8i1r"]
+[ext_resource type="Script" uid="uid://rosulqynujp8" path="res://Gyms/Derek/hallway_animation.gd" id="3_xiw5m"]
 
 [sub_resource type="Image" id="Image_ed54d"]
 data = {
@@ -102,10 +103,44 @@ shadow_mesh = SubResource("ArrayMesh_ym6cw")
 
 [sub_resource type="Curve3D" id="Curve3D_ed54d"]
 _data = {
-"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -2, 0.5, 0, 0, 0, 0, 0, 0, 0, -1.5, 1.5, 0, 0, 0, 0, 0, 0, 0, -0.5, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2.5, 0, 0, 0, 0, 0, 0, 0, 0.5, 2, 0, 0, 0, 0, 0, 0, 0, 1.5, 1.5, 0, 0, 0, 0, 0, 0, 0, 2, 0.5, 0),
-"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0)
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+"tilts": PackedFloat32Array(0, 0, 0)
 }
-point_count = 7
+point_count = 3
+
+[sub_resource type="Animation" id="Animation_xiw5m"]
+length = 0.001
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera3D")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 5.338444, 1.704005, 0.018)
+
+[sub_resource type="Animation" id="Animation_ed54d"]
+resource_name = "hallway_camera"
+length = 10.0
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera3D")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 6, 1, 0, 5, 1, 9.002, 4, 0, 9.994736, 1, 12, 1, 0)
+tracks/1/type = "rotation_3d"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera3D")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, 0, -0.707107, 0, 0.707107, 5, 1, -0.707107, 0, 0, 0.707107, 10, 1, 0, 0.707107, 0, 0.707107)
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xiw5m"]
+_data = {
+&"RESET": SubResource("Animation_xiw5m"),
+&"hallway_camera": SubResource("Animation_ed54d")
+}
 
 [node name="HallwaytestOverheadCamera" type="Node2D" unique_id=504354364]
 
@@ -137,17 +172,24 @@ transform = Transform3D(0.3459236, 0, 0, 0, 3.4624586, 0, 0, 0, 2.6226115, -1.87
 mesh = SubResource("BoxMesh_eacaq")
 
 [node name="Path3D" type="Path3D" parent="." unique_id=1645492098]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 2.469, 0.018)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 1.704005, 0.018)
 curve = SubResource("Curve3D_ed54d")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="Path3D" unique_id=1529234751 node_paths=PackedStringArray("target", "endpoint")]
-transform = Transform3D(7.5497844e-08, -0.894427, -0.44721296, 5.9604577e-08, 0.44721332, -0.8944263, 0.9999993, 4.0871374e-08, 8.707558e-08, -2, 0.5, 0)
+transform = Transform3D(0, 0.9999996, 0, 0, 0, -0.9999989, -0.9999993, 0, 0, 0, 0, 0)
+rotation_mode = 4
 script = ExtResource("2_e8i1r")
 target = NodePath("../../CharacterBody3D")
 endpoint = NodePath("../../Door")
 
-[node name="Camera3D" type="Camera3D" parent="Path3D/PathFollow3D" unique_id=490589236 node_paths=PackedStringArray("target")]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1846351284 node_paths=PackedStringArray("target", "endpoint")]
+libraries/ = SubResource("AnimationLibrary_xiw5m")
+script = ExtResource("3_xiw5m")
+target = NodePath("../CharacterBody3D")
+endpoint = NodePath("../Door")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=490589236 node_paths=PackedStringArray("target")]
 physics_interpolation_mode = 1
-transform = Transform3D(0.9998016, -0.0045883385, 0.019416204, 0.019950971, 0.22993545, -0.97300136, -1.4029086e-08, 0.9731957, 0.22998136, 0, 0, 1.4391582)
+transform = Transform3D(0.53934455, 0.3187651, -0.77942044, 0.31876513, 0.7794204, 0.53934467, 0.7794204, -0.53934467, 0.31876498, 5.338444, 1.704005, 0.018)
 script = ExtResource("2_76ol0")
-target = NodePath("../../../CharacterBody3D")
+target = NodePath("../CharacterBody3D")
