@@ -13,10 +13,10 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	var current_position = target.position
+	current_position = current_position.min(startpoint)
 	var max = startpoint.distance_to(endpoint.position)
-	var current = remap(target.position.distance_to(startpoint), 0, max, 0, 1)
-	print(current_animation)
-	#print(current_animation_length)
+	var current = remap(current_position.distance_to(startpoint), 0, max, 0, 1)
 	seek(remap(current,0,1,0,current_animation_length))
 	
 	pass

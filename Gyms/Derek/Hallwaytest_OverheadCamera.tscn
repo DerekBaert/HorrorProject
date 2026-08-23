@@ -1,4 +1,4 @@
-[gd_scene format=4 uid="uid://djgupirjlu24a"]
+[gd_scene format=4 uid="uid://dy8hquh0ctpli"]
 
 [ext_resource type="PackedScene" uid="uid://t4v7nx8ognp2" path="res://Gyms/Derek/Character.tscn" id="1_w5m53"]
 [ext_resource type="Texture2D" uid="uid://c3u1h61fri7x2" path="res://Gyms/Wins/textures/hallway_assets/Hallway_wall_3.png" id="3_f7k6g"]
