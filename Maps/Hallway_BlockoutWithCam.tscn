@@ -55,10 +55,10 @@ tracks/1/path = NodePath("Camera3D:position:x")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 5, 6.2, 7, 8.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 5, 6, 6.2, 6.3333335, 7, 8.5),
+"transitions": PackedFloat32Array(1.741102, 1.741102, 1, 1.741102, 1, 1.741102, 1.741102),
 "update": 0,
-"values": [10.0, -13.0, -7.0, -5.0, -10.0]
+"values": [10.0, -13.0, -8.537035, -7.0, -6.6, -5.0, -10.0]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -67,10 +67,10 @@ tracks/2/path = NodePath("Camera3D:position:y")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 5, 6.2, 7, 8.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 5, 6, 6.2, 6.3333335, 7, 8.5),
+"transitions": PackedFloat32Array(1.741102, 1.741102, 1, 1.741102, 1, 1.741102, 1.741102),
 "update": 0,
-"values": [1.0, 1.0, 4.0, 1.0, 1.0]
+"values": [1.0, 1.0, 3.2314825, 4.0, 3.7490058, 1.0, 1.0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_xiw5m"]
