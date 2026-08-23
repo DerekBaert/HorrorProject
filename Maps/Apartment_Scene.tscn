@@ -5,9 +5,13 @@
 [ext_resource type="PackedScene" uid="uid://dhignknd30cfb" path="res://Gyms/Wins/textures/apartment_assets/Apartment.glb" id="2_id2v6"]
 [ext_resource type="Script" uid="uid://csjccrhj5wnx7" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd" id="4_pkdn6"]
 [ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="5_7ut2d"]
+[ext_resource type="Script" uid="uid://byjophlmwr6o" path="res://Maps/door_interaction.gd" id="6_pkdn6"]
 
 [sub_resource type="Resource" id="Resource_sqt6l"]
 script = ExtResource("5_7ut2d")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_eacaq"]
+size = Vector3(1, 2.0878906, 0.3861084)
 
 [node name="Node3D" type="Node3D" unique_id=1469373198]
 
@@ -20,7 +24,7 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.86
 
 [node name="Camera3D" type="Camera3D" parent="Cameras" unique_id=991472993]
 physics_interpolation_mode = 1
-transform = Transform3D(-0.58666503, 0.16332212, -0.79318964, -7.450581e-09, 0.97945255, 0.2016747, 0.8098296, 0.11831552, -0.5746106, -2.4424942, 1.6257389, -1.8789206)
+transform = Transform3D(-0.58666515, 0.14101672, -0.7974572, 0, 0.98472244, 0.17413136, 0.8098295, 0.10215682, -0.5777023, -2.4424942, 1.6257389, -1.8789206)
 top_level = true
 
 [node name="PhantomCameraHost" type="Node" parent="Cameras/Camera3D" unique_id=671206882]
@@ -30,13 +34,13 @@ script = ExtResource("1_a2vf4")
 metadata/_custom_type_script = "uid://bd046eokvcnu2"
 
 [node name="CharacterBody3D" parent="." unique_id=52006111 instance=ExtResource("1_kgnjy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.42699972, 0.89614755, 0.19982827)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.42699972, 0.9991613, 0.19982827)
 
 [node name="Apartment_Assets" parent="." unique_id=434175797 instance=ExtResource("2_id2v6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 1)
 
 [node name="PhantomCamera3D" type="Node3D" parent="." unique_id=1141862968 node_paths=PackedStringArray("look_at_target")]
-transform = Transform3D(-0.5866649, 0.16332208, -0.79318947, -7.450579e-09, 0.9794523, 0.20167466, 0.8098294, 0.11831549, -0.5746105, -2.4424942, 1.6257389, -1.8789206)
+transform = Transform3D(-0.586665, 0.14101668, -0.797457, 0, 0.98472214, 0.17413132, 0.80982924, 0.10215679, -0.5777021, -2.4424942, 1.6257389, -1.8789206)
 script = ExtResource("4_pkdn6")
 look_at_mode = 2
 look_at_target = NodePath("../CharacterBody3D")
@@ -44,5 +48,12 @@ tween_resource = SubResource("Resource_sqt6l")
 align_transform_with_view = Callable()
 align_rotation_with_view = Callable()
 metadata/_custom_type_script = "uid://csjccrhj5wnx7"
+
+[node name="DoorInteraction" type="Area3D" parent="." unique_id=789100427]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1111337, -2.8753264)
+script = ExtResource("6_pkdn6")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DoorInteraction" unique_id=1507229987]
+shape = SubResource("BoxShape3D_eacaq")
 
 [editable path="Apartment_Assets"]

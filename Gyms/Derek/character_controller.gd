@@ -6,9 +6,7 @@ extends CharacterBody3D
 @export var auto_turn_speed: float = 5.0
 @export var tank_controls: bool = true
 @onready var camera = $"../Camera3D"
-
 @onready var interactionCheck = $ShapeCast3D
-
 var dir
 
 # Called when the node enters the scene tree for the first time.
@@ -16,8 +14,7 @@ func _ready() -> void:
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	
+func _process(delta: float) -> void:	
 	get_input(delta)
 	move_and_slide()
 	pass
