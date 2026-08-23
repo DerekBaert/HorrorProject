@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://ob6l5ll3qst8"]
+
+[ext_resource type="Script" uid="uid://byjophlmwr6o" path="res://Maps/door_interaction.gd" id="1_bsdun"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_eacaq"]
+size = Vector3(1, 2.0878906, 0.3861084)
+
+[node name="DoorInteraction" type="Area3D" unique_id=28648306]
+script = ExtResource("1_bsdun")
+scene_path = "res://Maps/Hallway_BlockoutWithCam.tscn"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1699886138]
+shape = SubResource("BoxShape3D_eacaq")

@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cbkdgsupkremi" path="res://Gyms/Wins/textures/rotroom_assets/RotRoom_door_3.png" id="4_uhxff"]
 [ext_resource type="Texture2D" uid="uid://ga2urd8iuojs" path="res://Gyms/Wins/textures/rotroom_assets/RotRoom_door_handle_1.png" id="5_gbvhk"]
 [ext_resource type="Texture2D" uid="uid://ds60h004mv22" path="res://Gyms/Wins/textures/rotroom_assets/RotRoom_wood_6.png" id="6_6j28s"]
+[ext_resource type="PackedScene" uid="uid://t4v7nx8ognp2" path="res://Gyms/Derek/Character.tscn" id="7_gbvhk"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x76jy"]
 resource_name = "floor_1.005"
@@ -4059,3 +4060,9 @@ light_energy = 17.55
 light_size = 0.33
 light_negative = true
 spot_angle = 63.843456
+
+[node name="CharacterBody3D" parent="." unique_id=52006111 instance=ExtResource("7_gbvhk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.046910048, 1.1001897, 5.4412346)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=486394396]
+transform = Transform3D(-0.7143028, 0, -0.69983685, 0, 1, 0, 0.69983685, 0, -0.7143028, -2.4547307, 1.2659583, -0.9768865)

@@ -1,6 +1,7 @@
 extends Area3D
 
 var can_interact: bool = false
+@export var scene_path: String 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	body_entered.connect(_onBodyEntered)
@@ -17,5 +18,5 @@ func _onBodyExited(body) -> void:
 
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("interact") and can_interact:
-		get_tree().change_scene_to_file("res://Maps/Hallway_BlockoutWithCam.tscn")
+		get_tree().change_scene_to_file(scene_path)
 		pass
