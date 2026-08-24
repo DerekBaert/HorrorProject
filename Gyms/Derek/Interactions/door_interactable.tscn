@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c2rdvolw8vjpe"]
+
+[ext_resource type="Script" uid="uid://dqgc1nyutvtvy" path="res://Gyms/Derek/Interactions/door_interactable.gd" id="1_tpq1a"]
+[ext_resource type="PackedScene" uid="uid://bxocjk3j7x2l3" path="res://Gyms/Derek/Interactions/interaction_area.tscn" id="2_wvqs1"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_eacaq"]
+size = Vector3(1.0375061, 2.5484009, 0.8116455)
+
+[node name="Door_Interactable" type="Node3D" unique_id=349954646]
+script = ExtResource("1_tpq1a")
+scene_path = "res://Maps/Hallway_BlockoutWithCam.tscn"
+
+[node name="InteractionArea" parent="." unique_id=1829814564 instance=ExtResource("2_wvqs1")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="InteractionArea" unique_id=2023716034]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5054474, 0.77420044, -0.094177246)
+shape = SubResource("BoxShape3D_eacaq")

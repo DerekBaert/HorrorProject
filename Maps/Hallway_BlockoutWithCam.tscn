@@ -2,7 +2,6 @@
 
 [ext_resource type="PackedScene" uid="uid://t4v7nx8ognp2" path="res://Gyms/Derek/Character.tscn" id="1_mfkrl"]
 [ext_resource type="Script" uid="uid://rosulqynujp8" path="res://Gyms/Derek/hallway_animation.gd" id="2_fpmok"]
-[ext_resource type="PackedScene" uid="uid://ob6l5ll3qst8" path="res://Gyms/Derek/door_interaction.tscn" id="3_3glgo"]
 [ext_resource type="Texture2D" uid="uid://c3u1h61fri7x2" path="res://Gyms/Wins/textures/hallway_assets/Hallway_wall_3.png" id="3_ho0gp"]
 [ext_resource type="Texture2D" uid="uid://dykisl4pkxuro" path="res://Gyms/Wins/textures/hallway_assets/Hallway_door_frame_wood_1.png" id="4_yjhuo"]
 [ext_resource type="Texture2D" uid="uid://c0mfhtjgng5hk" path="res://Gyms/Wins/textures/hallway_assets/Hallway_door_3.png" id="5_ies2r"]
@@ -10,6 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://b5da2g1sdxp4" path="res://Gyms/Wins/textures/hallway_assets/Hallway_door_1.png" id="7_33203"]
 [ext_resource type="Texture2D" uid="uid://kjxvvo55vlyc" path="res://Gyms/Wins/textures/hallway_assets/Hallway_floor_1.png" id="8_ajo1y"]
 [ext_resource type="Texture2D" uid="uid://b4oibbjb4txow" path="res://Gyms/Wins/textures/hallway_assets/Hallway_concrete_1.jpg" id="9_s16ek"]
+[ext_resource type="Script" uid="uid://dqgc1nyutvtvy" path="res://Gyms/Derek/Interactions/door_interactable.gd" id="10_k171f"]
+[ext_resource type="PackedScene" uid="uid://bxocjk3j7x2l3" path="res://Gyms/Derek/Interactions/interaction_area.tscn" id="11_o8bqa"]
 
 [sub_resource type="Animation" id="Animation_xiw5m"]
 length = 0.001
@@ -1612,6 +1613,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_gigfe")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_sx10t"]
+size = Vector3(1, 2.604004, 1)
+
 [node name="HallwaytestOverheadCamera" type="Node2D" unique_id=504354364]
 
 [node name="Lights" type="Node3D" parent="." unique_id=51572136]
@@ -1636,13 +1640,9 @@ script = ExtResource("2_fpmok")
 target = NodePath("../CharacterBody3D")
 endpoint = NodePath("../HallwayAssets/doorway_rotroom")
 
-[node name="Camera3D" type="Camera3D" parent="." unique_id=490589236]
+[node name="Camera3D" type="Camera3D" parent="." unique_id=490589236 groups=["Camera"]]
 physics_interpolation_mode = 1
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 10, 4, 0)
-
-[node name="DoorInteraction" parent="." unique_id=28648306 instance=ExtResource("3_3glgo")]
-transform = Transform3D(0.041738737, 0, 0.9991286, 0, 1, 0, -0.9991286, 0, 0.041738737, -21.904562, 1.1356776, -0.0323416)
-scene_path = "res://Maps/RotRoom.tscn"
 
 [node name="HallwayAssets" type="Node3D" parent="." unique_id=1899560447]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 15.904898, 0.007266283, -0.13812494)
@@ -1790,3 +1790,14 @@ mesh = SubResource("ArrayMesh_87lba")
 [node name="wall_1_030" type="MeshInstance3D" parent="HallwayAssets" unique_id=1185915189]
 transform = Transform3D(3.5762787e-07, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 3.5762787e-07, 2.0000007, 0, -36.028893)
 mesh = SubResource("ArrayMesh_87lba")
+
+[node name="DoorInteraction" type="Node3D" parent="." unique_id=1220520953]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.995481, 0.4954648, -0.10282779)
+script = ExtResource("10_k171f")
+scene_path = "res://Maps/RotRoom.tscn"
+
+[node name="InteractionArea" parent="DoorInteraction" unique_id=1829814564 instance=ExtResource("11_o8bqa")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DoorInteraction/InteractionArea" unique_id=1159708062]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.80200195, 0)
+shape = SubResource("BoxShape3D_sx10t")
