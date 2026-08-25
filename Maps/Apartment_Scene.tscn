@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://bxocjk3j7x2l3" path="res://Gyms/Derek/Interactions/interaction_area.tscn" id="7_sqt6l"]
 [ext_resource type="Script" uid="uid://ciup75dj5bx88" path="res://Maps/item_interaction.gd" id="8_sqt6l"]
 [ext_resource type="PackedScene" uid="uid://y5ky31pbike1" path="res://Gyms/Taq/UI/ItemUILayer.tscn" id="9_8hni3"]
+[ext_resource type="Texture2D" uid="uid://bwefuntxovo2x" path="res://Gyms/Taq/UI/Items/LockBox.png" id="9_58v4g"]
 [ext_resource type="Script" uid="uid://bqr2o55q8omtd" path="res://Gyms/Taq/UI/ItemResource.gd" id="9_in6ey"]
 
 [sub_resource type="Resource" id="Resource_sqt6l"]
@@ -19,6 +20,9 @@ size = Vector3(1, 2.1906128, 0.27825928)
 
 [sub_resource type="Resource" id="Resource_8hni3"]
 script = ExtResource("9_in6ey")
+itemName = "Trash"
+itemDescription = "I really need to take that out... at least the smell has gone away, or maybe I just got used to it?"
+itemImage = ExtResource("9_58v4g")
 metadata/_custom_type_script = "uid://bqr2o55q8omtd"
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_eacaq"]
