@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b1m0c1lhj3flm"]
+
+[ext_resource type="Texture2D" uid="uid://bvsyqljjqof3e" path="res://Gyms/Wins/textures/Andrew/Andrew_Mixamo_T_Andrew_ver1.png" id="1_lciks"]
+
+[resource]
+resource_name = "Material.001"
+cull_mode = 2
+shading_mode = 0
+albedo_texture = ExtResource("1_lciks")
+metadata/_gltf_primary_texture_coord = 0
