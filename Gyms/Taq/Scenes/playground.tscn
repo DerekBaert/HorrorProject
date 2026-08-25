@@ -94,6 +94,7 @@ texture = ExtResource("2_7p2em")
 shape = SubResource("RectangleShape2D_m7v3l")
 
 [node name="ItemUILayer" parent="." unique_id=2110651882 instance=ExtResource("6_d5tbn")]
+visible = false
 
 [node name="Notification" parent="." unique_id=1985557452 instance=ExtResource("10_bcvd6")]
 

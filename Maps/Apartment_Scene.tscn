@@ -7,12 +7,21 @@
 [ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="5_7ut2d"]
 [ext_resource type="Script" uid="uid://dqgc1nyutvtvy" path="res://Gyms/Derek/Interactions/door_interactable.gd" id="6_7ut2d"]
 [ext_resource type="PackedScene" uid="uid://bxocjk3j7x2l3" path="res://Gyms/Derek/Interactions/interaction_area.tscn" id="7_sqt6l"]
+[ext_resource type="Script" uid="uid://ciup75dj5bx88" path="res://Maps/item_interaction.gd" id="8_sqt6l"]
+[ext_resource type="PackedScene" uid="uid://y5ky31pbike1" path="res://Gyms/Taq/UI/ItemUILayer.tscn" id="9_8hni3"]
+[ext_resource type="Script" uid="uid://bqr2o55q8omtd" path="res://Gyms/Taq/UI/ItemResource.gd" id="9_in6ey"]
 
 [sub_resource type="Resource" id="Resource_sqt6l"]
 script = ExtResource("5_7ut2d")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_vmjrg"]
 size = Vector3(1, 2.1906128, 0.27825928)
+
+[sub_resource type="Resource" id="Resource_8hni3"]
+script = ExtResource("9_in6ey")
+metadata/_custom_type_script = "uid://bqr2o55q8omtd"
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_eacaq"]
 
 [node name="Node3D" type="Node3D" unique_id=1469373198]
 
@@ -48,6 +57,8 @@ script = ExtResource("4_pkdn6")
 look_at_mode = 2
 look_at_target = NodePath("../CharacterBody3D")
 tween_resource = SubResource("Resource_sqt6l")
+align_transform_with_view = Callable()
+align_rotation_with_view = Callable()
 metadata/_custom_type_script = "uid://csjccrhj5wnx7"
 
 [node name="DoorInteraction" type="Node3D" parent="." unique_id=1910483528]
@@ -61,5 +72,18 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3200192, 0.48227406)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DoorInteraction/InteractionArea" unique_id=1220164519]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.32254028, -0.0132751465)
 shape = SubResource("BoxShape3D_vmjrg")
+
+[node name="TrashInteraction" type="Node3D" parent="." unique_id=2094582720]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5077482, 0, -2.2189593)
+script = ExtResource("8_sqt6l")
+itemResource = SubResource("Resource_8hni3")
+
+[node name="InteractionArea" parent="TrashInteraction" unique_id=744030587 instance=ExtResource("7_sqt6l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7146554, 0.49834037, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TrashInteraction/InteractionArea" unique_id=605248523]
+shape = SubResource("SphereShape3D_eacaq")
+
+[node name="ItemUILayer" parent="." unique_id=2110651882 instance=ExtResource("9_8hni3")]
 
 [editable path="Apartment_Assets"]
