@@ -4,9 +4,9 @@ extends Node
 ## Global Signal
 
 # Item Interaction
-signal itemUITriggered
+signal itemUITriggered(resource:ItemResource)
 signal itemUIHidden
-signal notificationTriggered (notificationMessage:String)
+signal notificationTriggered(notificationMessage:String)
 
 
 # Player State
