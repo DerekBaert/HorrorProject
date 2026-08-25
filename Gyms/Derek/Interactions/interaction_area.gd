@@ -4,7 +4,6 @@ class_name InteractionArea
 @export var action_name: String = "interact"
 
 var interact: Callable = func():
-	print("Hello")
 	pass
 
 # When a body enters, it notifies the interaction manager to add it to the queue.
