@@ -24,15 +24,17 @@ func unregister_area(area: InteractionArea):
 	
 # Sorts nearest areas based on distance
 func _process(delta):
-	if(active_areas.size() > 0 and can_interact):
-		active_areas.sort_custom(_sort_by_distance)
-		if is_instance_valid(active_areas[0]):
-			icon.global_position = active_areas[0].global_position
-			icon.look_at(camera.global_position)
-			icon.show()
-			pass
-	else:
-		icon.hide()
+	if(player):
+		if(active_areas.size() > 0 and can_interact):
+			active_areas.sort_custom(_sort_by_distance)
+			if is_instance_valid(active_areas[0]):
+				icon.global_position = active_areas[0].global_position
+				icon.look_at(camera.global_position)
+				icon.show()
+				pass
+		else:
+			icon.hide()
+		pass
 	pass
 pass
 

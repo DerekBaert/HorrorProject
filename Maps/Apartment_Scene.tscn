@@ -48,7 +48,7 @@ process_physics_priority = 300
 script = ExtResource("1_a2vf4")
 metadata/_custom_type_script = "uid://bd046eokvcnu2"
 
-[node name="CharacterBody3D" parent="." unique_id=52006111 instance=ExtResource("1_kgnjy")]
+[node name="CharacterBody3D" parent="." unique_id=52006111 groups=["Player"] instance=ExtResource("1_kgnjy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.42699972, 0.9991613, 0.19982827)
 forward_speed = 75.0
 

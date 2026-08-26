@@ -10,5 +10,5 @@ func _ready() -> void:
 	pass 
 
 func _on_interact():
-	get_tree().change_scene_to_file(scene_path)
+	SceneManager.change_scene(scene_path)
 	pass
