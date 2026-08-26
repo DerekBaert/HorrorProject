@@ -1,11 +1,13 @@
 extends CharacterBody3D
 
+signal characterMovementChanged(is_moving:bool)
+
 @export var forward_speed: float = 150.0
 @export var backward_speed: float = forward_speed * 0.5
 @export var turn_speed: float = 1.0
 @export var auto_turn_speed: float = 5.0
-@export var tank_controls: bool = true
-@onready var camera = $"../Camera3D"
+@export var tank_controls: bool = false
+@onready var camera = get_tree().get_first_node_in_group('Camera')
 @onready var interactionCheck = $ShapeCast3D
 var dir
 
@@ -17,6 +19,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:	
 	get_input(delta)
 	move_and_slide()
+	characterMovementChanged.emit(velocity != Vector3.ZERO)
 	pass
 	
 func get_input(delta):

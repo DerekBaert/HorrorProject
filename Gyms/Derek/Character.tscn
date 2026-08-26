@@ -2,7 +2,8 @@
 
 [ext_resource type="Script" uid="uid://bwiedhyp3jtcj" path="res://Gyms/Derek/character_controller.gd" id="1_jihde"]
 [ext_resource type="Script" uid="uid://d4kim4ag13lky" path="res://Gyms/Derek/interaction_check.gd" id="2_uvuc0"]
-[ext_resource type="PackedScene" uid="uid://dafytpg06ggpj" path="res://Gyms/Wins/characters/Andrew_Blockout_ver2.fbx" id="2_y4ehm"]
+[ext_resource type="PackedScene" uid="uid://b2yown712mpaa" path="res://Gyms/Wins/characters/Andrew_PlayerAnimations.tscn" id="2_y4ehm"]
+[ext_resource type="Script" uid="uid://dn8vhwbgpbkke" path="res://Gyms/Wins/characters/player_animations.gd" id="3_ja835"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_y6er7"]
 
@@ -10,9 +11,14 @@
 
 [node name="CharacterBody3D" type="CharacterBody3D" unique_id=52006111]
 script = ExtResource("1_jihde")
+forward_speed = null
+turn_speed = null
+auto_turn_speed = null
+tank_controls = null
 
-[node name="Andrew_Blockout_ver2" parent="." unique_id=1012097996 instance=ExtResource("2_y4ehm")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+[node name="Andrew_Mixamo" parent="." unique_id=1131198314 instance=ExtResource("2_y4ehm")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, -1.0155951, 0)
+script = ExtResource("3_ja835")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=714253928]
 shape = SubResource("CapsuleShape3D_y6er7")
@@ -22,3 +28,5 @@ transform = Transform3D(-6.556708e-08, 0, 2, 0, 1.5, 0, -1.5, 0, -8.742278e-08, 
 shape = SubResource("SphereShape3D_eacaq")
 target_position = Vector3(0.75, 0, 0)
 script = ExtResource("2_uvuc0")
+
+[connection signal="characterMovementChanged" from="." to="Andrew_Mixamo" method="_on_character_body_3d_character_movement_changed"]

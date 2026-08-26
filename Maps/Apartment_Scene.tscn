@@ -51,6 +51,9 @@ metadata/_custom_type_script = "uid://bd046eokvcnu2"
 [node name="CharacterBody3D" parent="." unique_id=52006111 groups=["Player"] instance=ExtResource("1_kgnjy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.42699972, 0.9991613, 0.19982827)
 forward_speed = 75.0
+turn_speed = 1.0
+auto_turn_speed = 5.0
+tank_controls = false
 
 [node name="Apartment_Assets" parent="." unique_id=434175797 instance=ExtResource("2_id2v6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 1)
