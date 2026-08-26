@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://y5ky31pbike1" path="res://Gyms/Taq/UI/ItemUILayer.tscn" id="9_8hni3"]
 [ext_resource type="Texture2D" uid="uid://bwefuntxovo2x" path="res://Gyms/Taq/UI/Items/LockBox.png" id="9_58v4g"]
 [ext_resource type="Script" uid="uid://bqr2o55q8omtd" path="res://Gyms/Taq/UI/ItemResource.gd" id="9_in6ey"]
+[ext_resource type="AudioStream" uid="uid://ck37jq0cuoqkw" path="res://Gyms/Taq/Asset/Audio/sfx_ambiance_apartment_roomFridgeLights.ogg" id="12_jd2rr"]
 
 [sub_resource type="Resource" id="Resource_sqt6l"]
 script = ExtResource("5_7ut2d")
@@ -92,5 +93,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7146554, 0.49834037, 0)
 shape = SubResource("SphereShape3D_eacaq")
 
 [node name="ItemUILayer" parent="." unique_id=2110651882 instance=ExtResource("9_8hni3")]
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=2043957629]
+stream = ExtResource("12_jd2rr")
+volume_db = -10.0
+autoplay = true
 
 [editable path="Apartment_Assets"]
