@@ -48,7 +48,7 @@ tracks/0/enabled = true
 tracks/0/path = NodePath("Camera3D")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
-tracks/0/keys = PackedFloat32Array(0, 1, 0, -0.707107, 0, 0.707107, 5, 1, 0, -0.707107, 0, 0.707107, 6.2, 1, -0.707107, 0, 0, 0.707107, 7, 1, 0, 0.707107, 0, 0.707107, 8.5, 1, 0, 0.707107, 0, 0.707107)
+tracks/0/keys = PackedFloat32Array(0, 1, 0, -0.707107, 0, 0.707107, 5, 1, 0, -0.707107, 0, 0.707107, 5.2, 1, 0, -0.707107, 0, 0.707107, 6.2, 1, -0.707107, 0, 0, 0.707107, 7, 1, 0, 0.707107, 0, 0.707107, 8.5, 1, 0, 0.707107, 0, 0.707107)
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
@@ -56,10 +56,10 @@ tracks/1/path = NodePath("Camera3D:position:x")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 5, 6, 6.2, 6.3333335, 7, 8.5),
-"transitions": PackedFloat32Array(1.741102, 1.741102, 1, 1.741102, 1, 1.741102, 1.741102),
+"times": PackedFloat32Array(0, 5, 5.2, 6, 6.3333335, 7, 8.5),
+"transitions": PackedFloat32Array(1.741102, 1.741102, 1.741102, 1, 1, 1.741102, 1.741102),
 "update": 0,
-"values": [10.0, -13.0, -8.537035, -7.0, -6.6, -5.0, -10.0]
+"values": [10.0, -13.0, -13.0, -8.537035, -6.6, -5.0, -10.0]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -68,10 +68,10 @@ tracks/2/path = NodePath("Camera3D:position:y")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 5, 6, 6.2, 6.3333335, 7, 8.5),
-"transitions": PackedFloat32Array(1.741102, 1.741102, 1, 1.741102, 1, 1.741102, 1.741102),
+"times": PackedFloat32Array(0, 5, 6, 6.3333335, 7, 8.5),
+"transitions": PackedFloat32Array(1.741102, 1.741102, 1, 1, 1.741102, 1.741102),
 "update": 0,
-"values": [1.0, 1.0, 3.2314825, 4.0, 3.7490058, 1.0, 1.0]
+"values": [1.0, 1.0, 3.2314825, 3.7490058, 1.0, 1.0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_xiw5m"]
@@ -1642,7 +1642,7 @@ endpoint = NodePath("../HallwayAssets/doorway_rotroom")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=490589236 groups=["Camera"]]
 physics_interpolation_mode = 1
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 10, 4, 0)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10, 4, 0)
 
 [node name="HallwayAssets" type="Node3D" parent="." unique_id=1899560447]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 15.904898, 0.007266283, -0.13812494)

@@ -96,7 +96,7 @@ shape = SubResource("SphereShape3D_eacaq")
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=2043957629]
 stream = ExtResource("12_jd2rr")
-volume_db = -10.0
+volume_db = -17.0
 autoplay = true
 
 [editable path="Apartment_Assets"]
