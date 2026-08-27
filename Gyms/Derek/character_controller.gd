@@ -2,7 +2,7 @@ extends CharacterBody3D
 
 signal characterMovementChanged(is_moving:bool)
 
-@export var forward_speed: float = 150.0
+@export var forward_speed: float = 50.0
 @export var backward_speed: float = forward_speed * 0.5
 @export var turn_speed: float = 1.0
 @export var auto_turn_speed: float = 5.0
