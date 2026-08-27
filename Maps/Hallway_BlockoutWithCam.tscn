@@ -1711,6 +1711,46 @@ mesh = SubResource("ArrayMesh_45e52")
 transform = Transform3D(-1, -1.509958e-07, 0, 1.509958e-07, -1, 0, 0, 0, 1, 5.5134296e-07, 0, -36.038353)
 mesh = SubResource("ArrayMesh_45e52")
 
+[node name="floor_ceiling_1_023" type="MeshInstance3D" parent="HallwayAssets" unique_id=203081530]
+transform = Transform3D(-1, -1.509958e-07, 0, 1.509958e-07, -1, 0, 0, 0, 1, 0, 9, 0)
+mesh = SubResource("ArrayMesh_bvyqx")
+
+[node name="floor_ceiling_1_024" type="MeshInstance3D" parent="HallwayAssets" unique_id=595019147]
+transform = Transform3D(-1, -1.509958e-07, 0, 1.509958e-07, -1, 0, 0, 0, 1, 0, 9, -4)
+mesh = SubResource("ArrayMesh_4mop0")
+
+[node name="floor_ceiling_1_025" type="MeshInstance3D" parent="HallwayAssets" unique_id=161985237]
+transform = Transform3D(-1, -1.509958e-07, 0, 1.509958e-07, -1, 0, 0, 0, 1, 1.4901161e-08, 9, -8)
+mesh = SubResource("ArrayMesh_3uhl4")
+
+[node name="floor_ceiling_1_026" type="MeshInstance3D" parent="HallwayAssets" unique_id=430766942]
+transform = Transform3D(-1, -1.509958e-07, 0, 1.509958e-07, -1, 0, 0, 0, 1, 1.4901161e-08, 9, -12)
+mesh = SubResource("ArrayMesh_vj85u")
+
+[node name="floor_ceiling_1_027" type="MeshInstance3D" parent="HallwayAssets" unique_id=932573750]
+transform = Transform3D(-1, -1.509958e-07, 0, 1.509958e-07, -1, 0, 0, 0, 1, 0, 9, -16)
+mesh = SubResource("ArrayMesh_byua6")
+
+[node name="floor_ceiling_1_028" type="MeshInstance3D" parent="HallwayAssets" unique_id=467425682]
+transform = Transform3D(-1, -1.509958e-07, 0, 1.509958e-07, -1, 0, 0, 0, 1, 0, 9, -20)
+mesh = SubResource("ArrayMesh_hqml4")
+
+[node name="floor_ceiling_1_029" type="MeshInstance3D" parent="HallwayAssets" unique_id=124271633]
+transform = Transform3D(-1, -1.509958e-07, 0, 1.509958e-07, -1, 0, 0, 0, 1, 1.4901161e-08, 9, -24)
+mesh = SubResource("ArrayMesh_45e52")
+
+[node name="floor_ceiling_1_030" type="MeshInstance3D" parent="HallwayAssets" unique_id=798955758]
+transform = Transform3D(-1, -1.509958e-07, 0, 1.509958e-07, -1, 0, 0, 0, 1, 2.0861626e-07, 9, -28.030233)
+mesh = SubResource("ArrayMesh_45e52")
+
+[node name="floor_ceiling_1_031" type="MeshInstance3D" parent="HallwayAssets" unique_id=1041163240]
+transform = Transform3D(-1, -1.509958e-07, 0, 1.509958e-07, -1, 0, 0, 0, 1, 3.7252903e-07, 9, -32.060467)
+mesh = SubResource("ArrayMesh_45e52")
+
+[node name="floor_ceiling_1_032" type="MeshInstance3D" parent="HallwayAssets" unique_id=503701566]
+transform = Transform3D(-1, -1.509958e-07, 0, 1.509958e-07, -1, 0, 0, 0, 1, 5.5134296e-07, 9, -36.038353)
+mesh = SubResource("ArrayMesh_45e52")
+
 [node name="wall_1_014" type="MeshInstance3D" parent="HallwayAssets" unique_id=468101453]
 transform = Transform3D(3.5762787e-07, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 3.5762787e-07, -2, 0, 0)
 mesh = SubResource("ArrayMesh_hwcds")
@@ -1789,6 +1829,190 @@ mesh = SubResource("ArrayMesh_87lba")
 
 [node name="wall_1_030" type="MeshInstance3D" parent="HallwayAssets" unique_id=1185915189]
 transform = Transform3D(3.5762787e-07, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 3.5762787e-07, 2.0000007, 0, -36.028893)
+mesh = SubResource("ArrayMesh_87lba")
+
+[node name="wall_1_034" type="MeshInstance3D" parent="HallwayAssets" unique_id=111110987]
+transform = Transform3D(4.450506e-07, 3.82137e-15, -0.9999999, 8.742277e-08, -1, 3.508619e-14, -0.9999999, -8.742277e-08, -4.450506e-07, -1.9999985, 6.000003, -36.00001)
+mesh = SubResource("ArrayMesh_hwcds")
+
+[node name="wall_1_035" type="MeshInstance3D" parent="HallwayAssets" unique_id=1320119570]
+transform = Transform3D(4.450506e-07, 3.82137e-15, -0.9999999, 8.742277e-08, -1, 3.508619e-14, -0.9999999, -8.742277e-08, -4.450506e-07, 2.0000017, 6.000003, -36.00001)
+mesh = SubResource("ArrayMesh_lvknv")
+
+[node name="wall_1_036" type="MeshInstance3D" parent="HallwayAssets" unique_id=797547313]
+transform = Transform3D(4.450506e-07, 3.82137e-15, -0.9999999, 8.742277e-08, -1, 3.508619e-14, -0.9999999, -8.742277e-08, -4.450506e-07, -1.9999988, 6.000002, -32.00001)
+mesh = SubResource("ArrayMesh_0frgh")
+
+[node name="wall_1_037" type="MeshInstance3D" parent="HallwayAssets" unique_id=2040125989]
+transform = Transform3D(4.450506e-07, 3.82137e-15, -0.9999999, 8.742277e-08, -1, 3.508619e-14, -0.9999999, -8.742277e-08, -4.450506e-07, 2.0000014, 6.000002, -32.00001)
+mesh = SubResource("ArrayMesh_voqbg")
+
+[node name="wall_1_038" type="MeshInstance3D" parent="HallwayAssets" unique_id=336062299]
+transform = Transform3D(4.450506e-07, 3.82137e-15, -0.9999999, 8.742277e-08, -1, 3.508619e-14, -0.9999999, -8.742277e-08, -4.450506e-07, -1.999999, 6.000002, -28.000011)
+mesh = SubResource("ArrayMesh_bq58s")
+
+[node name="wall_1_039" type="MeshInstance3D" parent="HallwayAssets" unique_id=135541729]
+transform = Transform3D(4.450506e-07, 3.82137e-15, -0.9999999, 8.742277e-08, -1, 3.508619e-14, -0.9999999, -8.742277e-08, -4.450506e-07, 2.0000007, 6.000002, -28.000011)
+mesh = SubResource("ArrayMesh_rgc8l")
+
+[node name="wall_1_040" type="MeshInstance3D" parent="HallwayAssets" unique_id=1472445024]
+transform = Transform3D(4.450506e-07, 3.82137e-15, -0.9999999, 8.742277e-08, -1, 3.508619e-14, -0.9999999, -8.742277e-08, -4.450506e-07, -1.9999994, 6.000002, -24.000011)
+mesh = SubResource("ArrayMesh_fakcu")
+
+[node name="wall_1_041" type="MeshInstance3D" parent="HallwayAssets" unique_id=1527428336]
+transform = Transform3D(4.450506e-07, 3.82137e-15, -0.9999999, 8.742277e-08, -1, 3.508619e-14, -0.9999999, -8.742277e-08, -4.450506e-07, 2.0000005, 6.000002, -24.000011)
+mesh = SubResource("ArrayMesh_mhefo")
+
+[node name="wall_1_042" type="MeshInstance3D" parent="HallwayAssets" unique_id=314317572]
+transform = Transform3D(4.450506e-07, 3.82137e-15, -0.9999999, 8.742277e-08, -1, 3.508619e-14, -0.9999999, -8.742277e-08, -4.450506e-07, -1.9999995, 6.000001, -20.000011)
+mesh = SubResource("ArrayMesh_ekyd4")
+
+[node name="wall_1_043" type="MeshInstance3D" parent="HallwayAssets" unique_id=49076350]
+transform = Transform3D(4.450506e-07, 3.82137e-15, -0.9999999, 8.742277e-08, -1, 3.508619e-14, -0.9999999, -8.742277e-08, -4.450506e-07, 2.0000005, 6.000001, -20.000011)
+mesh = SubResource("ArrayMesh_hx8vx")
+
+[node name="wall_1_044" type="MeshInstance3D" parent="HallwayAssets" unique_id=535480831]
+transform = Transform3D(4.450506e-07, 3.82137e-15, -0.9999999, 8.742277e-08, -1, 3.508619e-14, -0.9999999, -8.742277e-08, -4.450506e-07, -2.0000002, 6.000001, -16.000011)
+mesh = SubResource("ArrayMesh_htd0e")
+
+[node name="wall_1_045" type="MeshInstance3D" parent="HallwayAssets" unique_id=485422557]
+transform = Transform3D(4.450506e-07, 3.82137e-15, -0.9999999, 8.742277e-08, -1, 3.508619e-14, -0.9999999, -8.742277e-08, -4.450506e-07, 1.9999998, 6.000001, -16.000011)
+mesh = SubResource("ArrayMesh_76cej")
+
+[node name="wall_1_046" type="MeshInstance3D" parent="HallwayAssets" unique_id=1221272642]
+transform = Transform3D(4.450506e-07, 3.82137e-15, -0.9999999, 8.742277e-08, -1, 3.508619e-14, -0.9999999, -8.742277e-08, -4.450506e-07, -2.0000002, 6.000001, -12.000011)
+mesh = SubResource("ArrayMesh_yc0wh")
+
+[node name="wall_1_047" type="MeshInstance3D" parent="HallwayAssets" unique_id=1292064526]
+transform = Transform3D(4.450506e-07, 3.82137e-15, -0.9999999, 8.742277e-08, -1, 3.508619e-14, -0.9999999, -8.742277e-08, -4.450506e-07, -2.0000005, 6, -8.006405)
+mesh = SubResource("ArrayMesh_yc0wh")
+
+[node name="wall_1_048" type="MeshInstance3D" parent="HallwayAssets" unique_id=1570916355]
+transform = Transform3D(4.450506e-07, 3.82137e-15, -0.9999999, 8.742277e-08, -1, 3.508619e-14, -0.9999999, -8.742277e-08, -4.450506e-07, -2.0000007, 6, -4.024002)
+mesh = SubResource("ArrayMesh_yc0wh")
+
+[node name="wall_1_049" type="MeshInstance3D" parent="HallwayAssets" unique_id=1107981097]
+transform = Transform3D(4.450506e-07, 3.82137e-15, -0.9999999, 8.742277e-08, -1, 3.508619e-14, -0.9999999, -8.742277e-08, -4.450506e-07, -2.000001, 5.999999, -0.027088165)
+mesh = SubResource("ArrayMesh_yc0wh")
+
+[node name="wall_1_054" type="MeshInstance3D" parent="HallwayAssets" unique_id=58564922]
+transform = Transform3D(4.450506e-07, 3.82137e-15, -0.9999999, 8.742277e-08, -1, 3.508619e-14, -0.9999999, -8.742277e-08, -4.450506e-07, -2.000001, 5.999999, -0.027088165)
+mesh = SubResource("ArrayMesh_yc0wh")
+
+[node name="wall_1_050" type="MeshInstance3D" parent="HallwayAssets" unique_id=1689845481]
+transform = Transform3D(4.450506e-07, 3.82137e-15, -0.9999999, 8.742277e-08, -1, 3.508619e-14, -0.9999999, -8.742277e-08, -4.450506e-07, 1.9999995, 6.000001, -12.000011)
+mesh = SubResource("ArrayMesh_87lba")
+
+[node name="wall_1_051" type="MeshInstance3D" parent="HallwayAssets" unique_id=1069313093]
+transform = Transform3D(4.450506e-07, 3.82137e-15, -0.9999999, 8.742277e-08, -1, 3.508619e-14, -0.9999999, -8.742277e-08, -4.450506e-07, 1.9999995, 6, -7.978176)
+mesh = SubResource("ArrayMesh_87lba")
+
+[node name="wall_1_052" type="MeshInstance3D" parent="HallwayAssets" unique_id=1650139199]
+transform = Transform3D(4.450506e-07, 3.82137e-15, -0.9999999, 8.742277e-08, -1, 3.508619e-14, -0.9999999, -8.742277e-08, -4.450506e-07, 1.9999993, 6, -3.993145)
+mesh = SubResource("ArrayMesh_87lba")
+
+[node name="wall_1_053" type="MeshInstance3D" parent="HallwayAssets" unique_id=1059109871]
+transform = Transform3D(4.450506e-07, 3.82137e-15, -0.9999999, 8.742277e-08, -1, 3.508619e-14, -0.9999999, -8.742277e-08, -4.450506e-07, 1.999999, 5.999999, 0.028881073)
+mesh = SubResource("ArrayMesh_87lba")
+
+[node name="wall_1_055" type="MeshInstance3D" parent="HallwayAssets" unique_id=1782818596]
+transform = Transform3D(0.9999999, 8.742276e-08, 4.88762e-07, 8.742276e-08, -1, 3.508618e-14, 4.88762e-07, 7.642773e-15, -0.9999999, -1.0430813e-06, 5.999999, 2.028881)
+mesh = SubResource("ArrayMesh_87lba")
+
+[node name="wall_1_056" type="MeshInstance3D" parent="HallwayAssets" unique_id=1981503442]
+transform = Transform3D(0.9999999, 8.742276e-08, 4.88762e-07, 8.742276e-08, -1, 3.508618e-14, 4.88762e-07, 7.642773e-15, -0.9999999, 7.301569e-07, 5.999999, -37.97112)
+mesh = SubResource("ArrayMesh_87lba")
+
+[node name="wall_1_057" type="MeshInstance3D" parent="HallwayAssets" unique_id=1727632049]
+transform = Transform3D(3.576278e-07, -6.4937323e-22, -0.9999999, 7.1054274e-15, 1, 0, 0.9999999, -1.4210855e-14, 3.576278e-07, -1.9999998, 5.999997, 0.050870895)
+mesh = SubResource("ArrayMesh_hwcds")
+
+[node name="wall_1_058" type="MeshInstance3D" parent="HallwayAssets" unique_id=768136049]
+transform = Transform3D(3.576278e-07, -6.4937323e-22, -0.9999999, 7.1054274e-15, 1, 0, 0.9999999, -1.4210855e-14, 3.576278e-07, 2, 5.999997, 0.050870895)
+mesh = SubResource("ArrayMesh_lvknv")
+
+[node name="wall_1_059" type="MeshInstance3D" parent="HallwayAssets" unique_id=1602408723]
+transform = Transform3D(3.576278e-07, -6.4937323e-22, -0.9999999, 7.1054274e-15, 1, 0, 0.9999999, -1.4210855e-14, 3.576278e-07, -2.0000002, 5.999997, -3.949129)
+mesh = SubResource("ArrayMesh_0frgh")
+
+[node name="wall_1_060" type="MeshInstance3D" parent="HallwayAssets" unique_id=366736217]
+transform = Transform3D(3.576278e-07, -6.4937323e-22, -0.9999999, 7.1054274e-15, 1, 0, 0.9999999, -1.4210855e-14, 3.576278e-07, 2.0000007, 5.999997, -3.949129)
+mesh = SubResource("ArrayMesh_voqbg")
+
+[node name="wall_1_061" type="MeshInstance3D" parent="HallwayAssets" unique_id=497327189]
+transform = Transform3D(3.576278e-07, -6.4937323e-22, -0.9999999, 7.1054274e-15, 1, 0, 0.9999999, -1.4210855e-14, 3.576278e-07, -1.9999999, 5.999997, -7.949129)
+mesh = SubResource("ArrayMesh_bq58s")
+
+[node name="wall_1_062" type="MeshInstance3D" parent="HallwayAssets" unique_id=1366015237]
+transform = Transform3D(3.576278e-07, -6.4937323e-22, -0.9999999, 7.1054274e-15, 1, 0, 0.9999999, -1.4210855e-14, 3.576278e-07, 2, 5.999997, -7.949129)
+mesh = SubResource("ArrayMesh_rgc8l")
+
+[node name="wall_1_063" type="MeshInstance3D" parent="HallwayAssets" unique_id=1709842526]
+transform = Transform3D(3.576278e-07, -6.4937323e-22, -0.9999999, 7.1054274e-15, 1, 0, 0.9999999, -1.4210855e-14, 3.576278e-07, -1.9999999, 5.999997, -11.94913)
+mesh = SubResource("ArrayMesh_fakcu")
+
+[node name="wall_1_064" type="MeshInstance3D" parent="HallwayAssets" unique_id=75113574]
+transform = Transform3D(3.576278e-07, -6.4937323e-22, -0.9999999, 7.1054274e-15, 1, 0, 0.9999999, -1.4210855e-14, 3.576278e-07, 2, 5.999997, -11.94913)
+mesh = SubResource("ArrayMesh_mhefo")
+
+[node name="wall_1_065" type="MeshInstance3D" parent="HallwayAssets" unique_id=724639769]
+transform = Transform3D(3.576278e-07, -6.4937323e-22, -0.9999999, 7.1054274e-15, 1, 0, 0.9999999, -1.4210855e-14, 3.576278e-07, -1.9999998, 5.999997, -15.949131)
+mesh = SubResource("ArrayMesh_ekyd4")
+
+[node name="wall_1_066" type="MeshInstance3D" parent="HallwayAssets" unique_id=2045104262]
+transform = Transform3D(3.576278e-07, -6.4937323e-22, -0.9999999, 7.1054274e-15, 1, 0, 0.9999999, -1.4210855e-14, 3.576278e-07, 2.0000002, 5.999997, -15.949129)
+mesh = SubResource("ArrayMesh_hx8vx")
+
+[node name="wall_1_067" type="MeshInstance3D" parent="HallwayAssets" unique_id=2115163037]
+transform = Transform3D(3.576278e-07, -6.4937323e-22, -0.9999999, 7.1054274e-15, 1, 0, 0.9999999, -1.4210855e-14, 3.576278e-07, -2.0000007, 5.999997, -19.94913)
+mesh = SubResource("ArrayMesh_htd0e")
+
+[node name="wall_1_068" type="MeshInstance3D" parent="HallwayAssets" unique_id=77810192]
+transform = Transform3D(3.576278e-07, -6.4937323e-22, -0.9999999, 7.1054274e-15, 1, 0, 0.9999999, -1.4210855e-14, 3.576278e-07, 2, 5.999997, -19.94913)
+mesh = SubResource("ArrayMesh_76cej")
+
+[node name="wall_1_069" type="MeshInstance3D" parent="HallwayAssets" unique_id=363413816]
+transform = Transform3D(3.576278e-07, -6.4937323e-22, -0.9999999, 7.1054274e-15, 1, 0, 0.9999999, -1.4210855e-14, 3.576278e-07, -1.9999996, 5.999997, -23.94913)
+mesh = SubResource("ArrayMesh_yc0wh")
+
+[node name="wall_1_070" type="MeshInstance3D" parent="HallwayAssets" unique_id=1859893801]
+transform = Transform3D(3.576278e-07, -6.4937323e-22, -0.9999999, 7.1054274e-15, 1, 0, 0.9999999, -1.4210855e-14, 3.576278e-07, -1.9999995, 5.999997, -27.942736)
+mesh = SubResource("ArrayMesh_yc0wh")
+
+[node name="wall_1_071" type="MeshInstance3D" parent="HallwayAssets" unique_id=1424776029]
+transform = Transform3D(3.576278e-07, -6.4937323e-22, -0.9999999, 7.1054274e-15, 1, 0, 0.9999999, -1.4210855e-14, 3.576278e-07, -1.9999995, 5.999997, -31.925138)
+mesh = SubResource("ArrayMesh_yc0wh")
+
+[node name="wall_1_072" type="MeshInstance3D" parent="HallwayAssets" unique_id=1495709817]
+transform = Transform3D(3.576278e-07, -6.4937323e-22, -0.9999999, 7.1054274e-15, 1, 0, 0.9999999, -1.4210855e-14, 3.576278e-07, -1.9999994, 5.999997, -35.92205)
+mesh = SubResource("ArrayMesh_yc0wh")
+
+[node name="wall_1_073" type="MeshInstance3D" parent="HallwayAssets" unique_id=1369999732]
+transform = Transform3D(3.576278e-07, -6.4937323e-22, -0.9999999, 7.1054274e-15, 1, 0, 0.9999999, -1.4210855e-14, 3.576278e-07, -1.9999994, 5.999997, -35.92205)
+mesh = SubResource("ArrayMesh_yc0wh")
+
+[node name="wall_1_074" type="MeshInstance3D" parent="HallwayAssets" unique_id=60004629]
+transform = Transform3D(3.576278e-07, -6.4937323e-22, -0.9999999, 7.1054274e-15, 1, 0, 0.9999999, -1.4210855e-14, 3.576278e-07, 2, 5.999997, -23.94913)
+mesh = SubResource("ArrayMesh_87lba")
+
+[node name="wall_1_075" type="MeshInstance3D" parent="HallwayAssets" unique_id=847133292]
+transform = Transform3D(3.576278e-07, -6.4937323e-22, -0.9999999, 7.1054274e-15, 1, 0, 0.9999999, -1.4210855e-14, 3.576278e-07, 2.0000002, 5.999997, -27.970964)
+mesh = SubResource("ArrayMesh_87lba")
+
+[node name="wall_1_076" type="MeshInstance3D" parent="HallwayAssets" unique_id=1553824491]
+transform = Transform3D(3.576278e-07, -6.4937323e-22, -0.9999999, 7.1054274e-15, 1, 0, 0.9999999, -1.4210855e-14, 3.576278e-07, 2.0000005, 5.999997, -31.955996)
+mesh = SubResource("ArrayMesh_87lba")
+
+[node name="wall_1_077" type="MeshInstance3D" parent="HallwayAssets" unique_id=1074497100]
+transform = Transform3D(3.576278e-07, -6.4937323e-22, -0.9999999, 7.1054274e-15, 1, 0, 0.9999999, -1.4210855e-14, 3.576278e-07, 2.0000007, 5.999997, -35.97802)
+mesh = SubResource("ArrayMesh_87lba")
+
+[node name="wall_1_078" type="MeshInstance3D" parent="HallwayAssets" unique_id=394190442]
+transform = Transform3D(0.9999999, 8.742276e-08, 4.013392e-07, -8.742279e-08, 1, 8.7422734e-08, -4.013392e-07, -8.742277e-08, 0.9999999, 7.301569e-07, 5.999997, -37.97802)
+mesh = SubResource("ArrayMesh_87lba")
+
+[node name="wall_1_079" type="MeshInstance3D" parent="HallwayAssets" unique_id=306630105]
+transform = Transform3D(0.9999999, 8.742276e-08, 4.013392e-07, -8.742279e-08, 1, 8.7422734e-08, -4.013392e-07, -8.742277e-08, 0.9999999, -9.834766e-07, 6.000001, 2.0219784)
 mesh = SubResource("ArrayMesh_87lba")
 
 [node name="DoorInteraction" type="Node3D" parent="." unique_id=1220520953]
