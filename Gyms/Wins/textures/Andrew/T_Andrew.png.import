@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bvsyqljjqof3e"
-path.s3tc="res://.godot/imported/Andrew_Mixamo_T_Andrew_ver1.png-bf182d1022d7004221cad22e041418b6.s3tc.ctex"
+path.s3tc="res://.godot/imported/T_Andrew.png-1154ac449cd8f617eff5ddaecf72bfd1.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://Gyms/Wins/textures/Andrew/Andrew_Mixamo_T_Andrew_ver1.png"
-dest_files=["res://.godot/imported/Andrew_Mixamo_T_Andrew_ver1.png-bf182d1022d7004221cad22e041418b6.s3tc.ctex"]
+source_file="res://Gyms/Wins/textures/Andrew/T_Andrew.png"
+dest_files=["res://.godot/imported/T_Andrew.png-1154ac449cd8f617eff5ddaecf72bfd1.s3tc.ctex"]
 
 [params]
 
