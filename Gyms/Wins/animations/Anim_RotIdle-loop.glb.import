@@ -3,13 +3,13 @@
 importer="animation_library"
 importer_version=1
 type="AnimationLibrary"
-uid="uid://b7uxkx7nuwi1e"
-path="res://.godot/imported/Anim_RotIdle.glb-62033d6d3d09cfe1f9ee3cd193c7ccb3.res"
+uid="uid://d3bvnmimganw6"
+path="res://.godot/imported/Anim_RotIdle-loop.glb-ba279fe670812e5d31a4cec3d0c1353d.res"
 
 [deps]
 
-source_file="res://Gyms/Wins/animations/Anim_RotIdle.glb"
-dest_files=["res://.godot/imported/Anim_RotIdle.glb-62033d6d3d09cfe1f9ee3cd193c7ccb3.res"]
+source_file="res://Gyms/Wins/animations/Anim_RotIdle-loop.glb"
+dest_files=["res://.godot/imported/Anim_RotIdle-loop.glb-ba279fe670812e5d31a4cec3d0c1353d.res"]
 
 [params]
 
