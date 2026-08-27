@@ -1623,13 +1623,18 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 15.9
 
 [node name="AreaLight3D" type="AreaLight3D" parent="Lights" unique_id=633102054]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 2.6426258, 0.82774997)
-light_energy = 4.0
+light_energy = 3.0
 
 [node name="AreaLight3D2" type="AreaLight3D" parent="Lights" unique_id=1110436331]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 5.364418e-07, 2.6426258, -37.252716)
 light_color = Color(0.09019608, 0.5411765, 1, 1)
-light_energy = 4.0
+light_energy = 3.3
 light_indirect_energy = 3.01
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Lights" unique_id=192834162]
+transform = Transform3D(-4.371139e-08, 1, 4.371139e-08, 0, -4.371139e-08, 1, 1, 4.371139e-08, 1.9106855e-15, -0.13812424, 4.487177, -15.904898)
+light_color = Color(0.5663506, 0.6053199, 0.9220392, 1)
+light_energy = 0.35
 
 [node name="CharacterBody3D" parent="." unique_id=52006111 instance=ExtResource("1_mfkrl")]
 transform = Transform3D(-0.025855802, 0, 0.9996657, 0, 1, 0, -0.9996657, 0, -0.025855802, 16.827106, 0.95202374, -0.13513327)
