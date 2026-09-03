@@ -1,5 +1,5 @@
 extends Node3D
-
+# Manager for events triggered by item interactions. Not made global as it will only exist in the apartment.
 var eventTriggers:bool
 var event:EventResource
 

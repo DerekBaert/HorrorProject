@@ -5,7 +5,7 @@ extends Node
 
 # Item Interaction
 signal itemUITriggered(resource:ItemResource)
-signal itemUIHidden()
+signal itemUIHidden
 signal notificationTriggered(notificationMessage:String)
 
 # Player State
