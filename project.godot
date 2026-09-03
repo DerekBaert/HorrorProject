@@ -114,7 +114,7 @@ cancel={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://Gyms/Taq/Dialogue/Dialogue.dialogue", "res://Gyms/Derek/interactable.dialogue", "res://Gyms/Taq/UI/Items/Item.dialogue", "res://Gyms/Taq/Dialogue/1stMeeting.dialogue", "res://Gyms/Taq/Dialogue/2ndMeeting.dialogue", "res://Gyms/Taq/Dialogue/3rdMeeting.dialogue", "res://Gyms/Taq/Dialogue/4thMeeting.dialogue", "res://Gyms/Taq/Dialogue/5thMeeting.dialogue", "res://Gyms/Taq/Dialogue/6thMeeting.dialogue")
+locale/translations_pot_files=PackedStringArray("res://Gyms/Taq/Dialogue/Dialogue.dialogue", "res://Gyms/Derek/interactable.dialogue", "res://Gyms/Taq/UI/Items/Item.dialogue", "res://Gyms/Taq/Dialogue/1stMeeting.dialogue", "res://Gyms/Taq/Dialogue/2ndMeeting.dialogue", "res://Gyms/Taq/Dialogue/3rdMeeting.dialogue", "res://Gyms/Taq/Dialogue/4thMeeting.dialogue", "res://Gyms/Taq/Dialogue/5thMeeting.dialogue", "res://Gyms/Taq/Dialogue/6thMeeting.dialogue", "res://Gyms/Derek/Events/1stMeeting.dialogue")
 
 [physics]
 

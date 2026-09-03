@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://b7plnhm28tcop"
+path="res://.godot/imported/1stMeeting.dialogue-417e49cd29396e018bba5953f9eae46e.tres"
+
+[deps]
+
+source_file="res://Gyms/Derek/Events/1stMeeting.dialogue"
+dest_files=["res://.godot/imported/1stMeeting.dialogue-417e49cd29396e018bba5953f9eae46e.tres"]
+
+[params]
+
+defaults=true

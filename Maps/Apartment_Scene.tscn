@@ -10,6 +10,8 @@
 [ext_resource type="Script" uid="uid://ciup75dj5bx88" path="res://Maps/item_interaction.gd" id="8_sqt6l"]
 [ext_resource type="PackedScene" uid="uid://y5ky31pbike1" path="res://Gyms/Taq/UI/ItemUILayer.tscn" id="9_8hni3"]
 [ext_resource type="Script" uid="uid://bqr2o55q8omtd" path="res://Gyms/Taq/UI/ItemResource.gd" id="9_in6ey"]
+[ext_resource type="Resource" uid="uid://b7plnhm28tcop" path="res://Gyms/Derek/Events/1stMeeting.dialogue" id="12_4edn7"]
+[ext_resource type="Script" uid="uid://cr48xqrtoq6ld" path="res://Gyms/Derek/DialogueEventResource.gd" id="12_djf6a"]
 [ext_resource type="AudioStream" uid="uid://ck37jq0cuoqkw" path="res://Gyms/Taq/Asset/Audio/sfx_ambiance_apartment_roomFridgeLights.ogg" id="12_jd2rr"]
 [ext_resource type="Texture2D" uid="uid://ckp7wn5gqefxc" path="res://Gyms/Taq/UI/cat.jpg" id="13_r80e1"]
 [ext_resource type="Script" uid="uid://bwfw68homqhax" path="res://Maps/event_manager.gd" id="14_djf6a"]
@@ -26,11 +28,20 @@ metadata/_custom_type_script = "uid://bqr2o55q8omtd"
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_eacaq"]
 
+[sub_resource type="Resource" id="Resource_4edn7"]
+script = ExtResource("12_djf6a")
+dialogueResource = ExtResource("12_4edn7")
+eventName = "Notepad"
+eventDescription = "Andrew interacts with the Notepad after the first meeting with the Rot"
+metadata/_custom_type_script = "uid://cr48xqrtoq6ld"
+
 [sub_resource type="Resource" id="Resource_eacaq"]
 script = ExtResource("9_in6ey")
 itemName = "Notepad"
 itemDescription = "A notepad. Someone left a message on it, it says: “Hey, haven’t heard from you in a while. Getting a little worried, give me a call when you get this. - R”"
 itemImage = ExtResource("13_r80e1")
+triggersEvent = true
+event = SubResource("Resource_4edn7")
 metadata/_custom_type_script = "uid://bqr2o55q8omtd"
 
 [node name="Node3D" type="Node3D" unique_id=1469373198]
@@ -70,8 +81,6 @@ script = ExtResource("4_pkdn6")
 look_at_mode = 2
 look_at_target = NodePath("../CharacterBody3D")
 tween_resource = SubResource("Resource_sqt6l")
-align_transform_with_view = Callable()
-align_rotation_with_view = Callable()
 metadata/_custom_type_script = "uid://csjccrhj5wnx7"
 
 [node name="DoorInteraction" type="Node3D" parent="." unique_id=1910483528]
@@ -108,11 +117,20 @@ autoplay = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.808634, 0.81915426, 1.2899612)
 script = ExtResource("8_sqt6l")
 itemResource = SubResource("Resource_eacaq")
-triggerEvent = true
 
 [node name="InteractionArea" parent="Notepad Interaction" unique_id=1498706141 instance=ExtResource("7_sqt6l")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Notepad Interaction/InteractionArea" unique_id=161533693]
+shape = SubResource("SphereShape3D_eacaq")
+
+[node name="Notepad Interaction" type="Node3D" parent="Notepad Interaction" unique_id=3578751]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.808634, 0.81915426, 1.2899612)
+script = ExtResource("8_sqt6l")
+itemResource = SubResource("Resource_eacaq")
+
+[node name="InteractionArea" parent="Notepad Interaction/Notepad Interaction" unique_id=92943488 instance=ExtResource("7_sqt6l")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Notepad Interaction/Notepad Interaction/InteractionArea" unique_id=1675517242]
 shape = SubResource("SphereShape3D_eacaq")
 
 [node name="EventManager" type="Node3D" parent="." unique_id=1145551275]
