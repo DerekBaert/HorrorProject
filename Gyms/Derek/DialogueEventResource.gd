@@ -1,0 +1,4 @@
+extends EventResource
+class_name DialogueEventResource
+
+@export var dialogueResource:DialogueResource

@@ -9,9 +9,10 @@
 [ext_resource type="PackedScene" uid="uid://bxocjk3j7x2l3" path="res://Gyms/Derek/Interactions/interaction_area.tscn" id="7_sqt6l"]
 [ext_resource type="Script" uid="uid://ciup75dj5bx88" path="res://Maps/item_interaction.gd" id="8_sqt6l"]
 [ext_resource type="PackedScene" uid="uid://y5ky31pbike1" path="res://Gyms/Taq/UI/ItemUILayer.tscn" id="9_8hni3"]
-[ext_resource type="Texture2D" uid="uid://bwefuntxovo2x" path="res://Gyms/Taq/UI/Items/LockBox.png" id="9_58v4g"]
 [ext_resource type="Script" uid="uid://bqr2o55q8omtd" path="res://Gyms/Taq/UI/ItemResource.gd" id="9_in6ey"]
 [ext_resource type="AudioStream" uid="uid://ck37jq0cuoqkw" path="res://Gyms/Taq/Asset/Audio/sfx_ambiance_apartment_roomFridgeLights.ogg" id="12_jd2rr"]
+[ext_resource type="Texture2D" uid="uid://ckp7wn5gqefxc" path="res://Gyms/Taq/UI/cat.jpg" id="13_r80e1"]
+[ext_resource type="Script" uid="uid://bwfw68homqhax" path="res://Maps/event_manager.gd" id="14_djf6a"]
 
 [sub_resource type="Resource" id="Resource_sqt6l"]
 script = ExtResource("5_7ut2d")
@@ -19,14 +20,18 @@ script = ExtResource("5_7ut2d")
 [sub_resource type="BoxShape3D" id="BoxShape3D_vmjrg"]
 size = Vector3(1, 2.1906128, 0.27825928)
 
-[sub_resource type="Resource" id="Resource_8hni3"]
+[sub_resource type="Resource" id="Resource_djf6a"]
 script = ExtResource("9_in6ey")
-itemName = "Trash"
-itemDescription = "I really need to take that out... at least the smell has gone away, or maybe I just got used to it?"
-itemImage = ExtResource("9_58v4g")
 metadata/_custom_type_script = "uid://bqr2o55q8omtd"
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_eacaq"]
+
+[sub_resource type="Resource" id="Resource_eacaq"]
+script = ExtResource("9_in6ey")
+itemName = "Notepad"
+itemDescription = "A notepad. Someone left a message on it, it says: “Hey, haven’t heard from you in a while. Getting a little worried, give me a call when you get this. - R”"
+itemImage = ExtResource("13_r80e1")
+metadata/_custom_type_script = "uid://bqr2o55q8omtd"
 
 [node name="Node3D" type="Node3D" unique_id=1469373198]
 
@@ -84,7 +89,7 @@ shape = SubResource("BoxShape3D_vmjrg")
 [node name="TrashInteraction" type="Node3D" parent="." unique_id=2094582720]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5077482, 0, -2.2189593)
 script = ExtResource("8_sqt6l")
-itemResource = SubResource("Resource_8hni3")
+itemResource = SubResource("Resource_djf6a")
 
 [node name="InteractionArea" parent="TrashInteraction" unique_id=744030587 instance=ExtResource("7_sqt6l")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7146554, 0.49834037, 0)
@@ -98,5 +103,19 @@ shape = SubResource("SphereShape3D_eacaq")
 stream = ExtResource("12_jd2rr")
 volume_db = -17.0
 autoplay = true
+
+[node name="Notepad Interaction" type="Node3D" parent="." unique_id=2088864905]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.808634, 0.81915426, 1.2899612)
+script = ExtResource("8_sqt6l")
+itemResource = SubResource("Resource_eacaq")
+triggerEvent = true
+
+[node name="InteractionArea" parent="Notepad Interaction" unique_id=1498706141 instance=ExtResource("7_sqt6l")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Notepad Interaction/InteractionArea" unique_id=161533693]
+shape = SubResource("SphereShape3D_eacaq")
+
+[node name="EventManager" type="Node3D" parent="." unique_id=1145551275]
+script = ExtResource("14_djf6a")
 
 [editable path="Apartment_Assets"]
