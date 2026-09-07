@@ -11,10 +11,37 @@
 [ext_resource type="PackedScene" uid="uid://y5ky31pbike1" path="res://Gyms/Taq/UI/ItemUILayer.tscn" id="9_8hni3"]
 [ext_resource type="Script" uid="uid://bqr2o55q8omtd" path="res://Gyms/Taq/UI/ItemResource.gd" id="9_in6ey"]
 [ext_resource type="Resource" uid="uid://b7plnhm28tcop" path="res://Gyms/Derek/Events/1stMeeting.dialogue" id="12_4edn7"]
-[ext_resource type="Script" uid="uid://cr48xqrtoq6ld" path="res://Gyms/Derek/DialogueEventResource.gd" id="12_djf6a"]
+[ext_resource type="Script" uid="uid://cr48xqrtoq6ld" path="res://Gyms/Derek/Events/DialogueEventResource.gd" id="12_djf6a"]
 [ext_resource type="AudioStream" uid="uid://ck37jq0cuoqkw" path="res://Gyms/Taq/Asset/Audio/sfx_ambiance_apartment_roomFridgeLights.ogg" id="12_jd2rr"]
 [ext_resource type="Texture2D" uid="uid://ckp7wn5gqefxc" path="res://Gyms/Taq/UI/cat.jpg" id="13_r80e1"]
-[ext_resource type="Script" uid="uid://bwfw68homqhax" path="res://Maps/event_manager.gd" id="14_djf6a"]
+[ext_resource type="Script" uid="uid://bwfw68homqhax" path="res://Gyms/Derek/Events/event_manager.gd" id="14_djf6a"]
+
+[sub_resource type="Animation" id="Animation_4edn7"]
+length = 0.001
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Apartment_Assets/sm_trashbag5")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0.92256176, 0.22430545, 0)
+
+[sub_resource type="Animation" id="Animation_djf6a"]
+resource_name = "test"
+length = 10.0
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Apartment_Assets/sm_trashbag5")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0.92256176, 0.22430545, 0, 10, 1, 0.923, 2, 0)
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4edn7"]
+_data = {
+&"RESET": SubResource("Animation_4edn7"),
+&"test": SubResource("Animation_djf6a")
+}
 
 [sub_resource type="Resource" id="Resource_sqt6l"]
 script = ExtResource("5_7ut2d")
@@ -31,8 +58,6 @@ metadata/_custom_type_script = "uid://bqr2o55q8omtd"
 [sub_resource type="Resource" id="Resource_4edn7"]
 script = ExtResource("12_djf6a")
 dialogueResource = ExtResource("12_4edn7")
-eventName = "Notepad"
-eventDescription = "Andrew interacts with the Notepad after the first meeting with the Rot"
 metadata/_custom_type_script = "uid://cr48xqrtoq6ld"
 
 [sub_resource type="Resource" id="Resource_eacaq"]
@@ -45,6 +70,10 @@ event = SubResource("Resource_4edn7")
 metadata/_custom_type_script = "uid://bqr2o55q8omtd"
 
 [node name="Node3D" type="Node3D" unique_id=1469373198]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=159818261]
+root_node = NodePath("../Notepad Interaction")
+libraries/ = SubResource("AnimationLibrary_4edn7")
 
 [node name="Lights" type="Node" parent="." unique_id=1683405823]
 
@@ -74,6 +103,9 @@ tank_controls = false
 
 [node name="Apartment_Assets" parent="." unique_id=434175797 instance=ExtResource("2_id2v6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 1)
+
+[node name="sm_trashbag5" parent="Apartment_Assets" index="233" unique_id=2022675712]
+transform = Transform3D(-0.3735619, 0, -0.021550795, 0, 0.4015329, 0, 0.021550795, 0, -0.3735619, 0.92256176, 0.22430545, 0)
 
 [node name="PhantomCamera3D" type="Node3D" parent="." unique_id=1141862968 node_paths=PackedStringArray("look_at_target")]
 transform = Transform3D(-0.6916824, 0.19993417, -0.69397485, 0, 0.9609156, 0.2768398, 0.7222015, 0.19148526, -0.6646486, -2.4424942, 2.143857, -2.5484052)
