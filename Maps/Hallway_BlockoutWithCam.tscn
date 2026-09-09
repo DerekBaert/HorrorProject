@@ -22,7 +22,7 @@ script = ExtResource("14_3aaiv")
 
 [sub_resource type="Resource" id="Resource_2gnxf"]
 script = ExtResource("15_e6iod")
-amplitude = 4.0
+amplitude = 2.0
 frequency = 0.1
 rotational_noise = false
 positional_noise = true
@@ -1642,7 +1642,7 @@ size = Vector3(1, 2.604004, 1)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 1, 0)
 
 [node name="PhantomCamera3D" type="Node3D" parent="CameraPivot" unique_id=834159958 node_paths=PackedStringArray("look_at_target")]
-transform = Transform3D(0.019789636, 0.0070243943, -0.9997795, -2.3283064e-10, 0.9999753, 0.00702577, 0.9998042, -0.00013903785, 0.01978916, 0, 0, 0)
+transform = Transform3D(0.019789696, -0.0041691936, -0.99979556, 0, 0.9999913, -0.00417001, 0.99980426, 8.252333e-05, 0.019789517, 0, 0, 0)
 script = ExtResource("13_2gnxf")
 look_at_mode = 2
 look_at_target = NodePath("../../CharacterBody3D")
@@ -1682,7 +1682,7 @@ light_color = Color(0.5663506, 0.6053199, 0.9220392, 1)
 light_energy = 0.35
 
 [node name="CharacterBody3D" parent="." unique_id=52006111 instance=ExtResource("1_mfkrl")]
-transform = Transform3D(-0.025855802, 0, 0.9996657, 0, 1, 0, -0.9996657, 0, -0.025855802, 16.827106, 0.95202374, -0.13513327)
+transform = Transform3D(-0.025855802, 0, 0.9996657, 0, 1, 0, -0.9996657, 0, -0.025855802, 16.827106, 1.0284749, -0.13513327)
 forward_speed = 100.0
 
 [node name="OverheadCamera" type="AnimationPlayer" parent="." unique_id=1846351284 node_paths=PackedStringArray("target", "endpoint")]
