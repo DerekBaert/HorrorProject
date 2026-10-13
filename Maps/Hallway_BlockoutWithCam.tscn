@@ -72,10 +72,10 @@ tracks/1/path = NodePath("CameraPivot:position:x")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 5, 5.2, 6, 6.3333335, 7, 8.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 5, 5.2, 6, 6.1666665, 6.3333335, 6.633333, 7, 8.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [10.0, -13.0, -13.0, -8.5, -6.6, -5.0, -10.0]
+"values": [10.0, -13.0, -13.0, -8.5, -7.3600016, -6.6, -5.936, -5.0, -10.0]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -84,10 +84,10 @@ tracks/2/path = NodePath("CameraPivot:position:y")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 5, 6, 6.3333335, 7, 8.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 5, 6, 6.1666665, 6.3333335, 6.633333, 7, 8.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [1.0, 1.0, 3.25, 3.75, 1.0, 1.0]
+"values": [1.0, 1.0, 3.25, 3.5499995, 3.75, 2.52625, 1.0, 1.0]
 }
 
 [sub_resource type="Animation" id="Animation_k171f"]
@@ -1642,7 +1642,7 @@ size = Vector3(1, 2.604004, 1)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 1, 0)
 
 [node name="PhantomCamera3D" type="Node3D" parent="CameraPivot" unique_id=834159958 node_paths=PackedStringArray("look_at_target")]
-transform = Transform3D(0.019789696, -0.0041691936, -0.99979556, 0, 0.9999913, -0.00417001, 0.99980426, 8.252333e-05, 0.019789517, 0, 0, 0)
+transform = Transform3D(0.004674614, -0.0009850275, -0.99998873, 0, 0.9999995, -0.0009850385, 0.9999892, 4.6046916e-06, 0.004674614, 0, 0, 0)
 script = ExtResource("13_2gnxf")
 look_at_mode = 2
 look_at_target = NodePath("../../CharacterBody3D")
@@ -1654,7 +1654,8 @@ metadata/_custom_type_script = "uid://csjccrhj5wnx7"
 
 [node name="Camera3D" type="Camera3D" parent="CameraPivot" unique_id=490589236 groups=["Camera"]]
 physics_interpolation_mode = 1
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0, 0)
+transform = Transform3D(0.0046746135, -0.0009850275, -0.9999886, 0, 0.9999995, -0.0009850384, 0.9999891, 4.604673e-06, 0.004674611, -12.074808, 0.99384737, 0.0123690255)
+top_level = true
 script = ExtResource("1_o8bqa")
 
 [node name="PhantomCameraHost" type="Node" parent="CameraPivot/Camera3D" unique_id=737556036]
@@ -1683,7 +1684,10 @@ light_energy = 0.35
 
 [node name="CharacterBody3D" parent="." unique_id=52006111 instance=ExtResource("1_mfkrl")]
 transform = Transform3D(-0.025855802, 0, 0.9996657, 0, 1, 0, -0.9996657, 0, -0.025855802, 16.827106, 1.0284749, -0.13513327)
-forward_speed = 100.0
+forward_speed = 400.0
+turn_speed = 1.0
+auto_turn_speed = 5.0
+tank_controls = true
 
 [node name="OverheadCamera" type="AnimationPlayer" parent="." unique_id=1846351284 node_paths=PackedStringArray("target", "endpoint")]
 libraries/ = SubResource("AnimationLibrary_xiw5m")

@@ -84,7 +84,7 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.86
 
 [node name="Camera3D" type="Camera3D" parent="Cameras" unique_id=991472993 groups=["Camera"]]
 physics_interpolation_mode = 1
-transform = Transform3D(-0.6916826, 0.19993426, -0.6939752, 0, 0.96091604, 0.2768399, 0.7222017, 0.19148533, -0.6646489, -2.4424942, 2.143857, -2.5484052)
+transform = Transform3D(-0.69168246, 0.19682285, -0.694864, -7.450581e-09, 0.9621468, 0.2725317, 0.72220165, 0.18850541, -0.66550004, -2.4424942, 2.143857, -2.5484052)
 top_level = true
 fov = 60.0
 
@@ -96,23 +96,26 @@ metadata/_custom_type_script = "uid://bd046eokvcnu2"
 
 [node name="CharacterBody3D" parent="." unique_id=52006111 groups=["Player"] instance=ExtResource("1_kgnjy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.42699972, 1.0184166, 0.19982827)
-forward_speed = 50.0
+forward_speed = 200.0
+backward_speed = 100.0
 turn_speed = 1.0
 auto_turn_speed = 5.0
-tank_controls = false
+tank_controls = true
 
 [node name="Apartment_Assets" parent="." unique_id=434175797 instance=ExtResource("2_id2v6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 1)
 
-[node name="sm_trashbag5" parent="Apartment_Assets" index="233" unique_id=2022675712]
+[node name="sm_trashbag5" parent="Apartment_Assets" index="233" unique_id=1175049405]
 transform = Transform3D(-0.3735619, 0, -0.021550795, 0, 0.4015329, 0, 0.021550795, 0, -0.3735619, 0.92256176, 0.22430545, 0)
 
 [node name="PhantomCamera3D" type="Node3D" parent="." unique_id=1141862968 node_paths=PackedStringArray("look_at_target")]
-transform = Transform3D(-0.6916824, 0.19993417, -0.69397485, 0, 0.9609156, 0.2768398, 0.7222015, 0.19148526, -0.6646486, -2.4424942, 2.143857, -2.5484052)
+transform = Transform3D(-0.6916822, 0.19682276, -0.69486356, -7.450578e-09, 0.9621464, 0.27253154, 0.7222014, 0.18850534, -0.6654996, -2.4424942, 2.143857, -2.5484052)
 script = ExtResource("4_pkdn6")
 look_at_mode = 2
 look_at_target = NodePath("../CharacterBody3D")
 tween_resource = SubResource("Resource_sqt6l")
+align_transform_with_view = Callable()
+align_rotation_with_view = Callable()
 metadata/_custom_type_script = "uid://csjccrhj5wnx7"
 
 [node name="DoorInteraction" type="Node3D" parent="." unique_id=1910483528]
