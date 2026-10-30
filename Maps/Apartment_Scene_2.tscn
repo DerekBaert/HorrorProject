@@ -1,20 +1,20 @@
-[gd_scene format=3 uid="uid://b0qed8q6c5j8m"]
+[gd_scene format=3 uid="uid://devu2ckqejg7k"]
 
-[ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="1_a2vf4"]
-[ext_resource type="PackedScene" uid="uid://t4v7nx8ognp2" path="res://Gyms/Derek/Character.tscn" id="1_kgnjy"]
-[ext_resource type="PackedScene" uid="uid://dhignknd30cfb" path="res://Gyms/Wins/textures/apartment_assets/Apartment.glb" id="2_id2v6"]
-[ext_resource type="Script" uid="uid://csjccrhj5wnx7" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd" id="4_pkdn6"]
-[ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="5_7ut2d"]
-[ext_resource type="Script" uid="uid://dqgc1nyutvtvy" path="res://Gyms/Derek/Interactions/door_interactable.gd" id="6_7ut2d"]
-[ext_resource type="PackedScene" uid="uid://bxocjk3j7x2l3" path="res://Gyms/Derek/Interactions/interaction_area.tscn" id="7_sqt6l"]
-[ext_resource type="Script" uid="uid://ciup75dj5bx88" path="res://Maps/item_interaction.gd" id="8_sqt6l"]
-[ext_resource type="PackedScene" uid="uid://y5ky31pbike1" path="res://Gyms/Taq/UI/ItemUILayer.tscn" id="9_8hni3"]
-[ext_resource type="Script" uid="uid://bqr2o55q8omtd" path="res://Gyms/Taq/UI/ItemResource.gd" id="9_in6ey"]
-[ext_resource type="Resource" uid="uid://b7plnhm28tcop" path="res://Gyms/Derek/Events/1stMeeting.dialogue" id="12_4edn7"]
-[ext_resource type="Script" uid="uid://cr48xqrtoq6ld" path="res://Gyms/Derek/Events/DialogueEventResource.gd" id="12_djf6a"]
-[ext_resource type="AudioStream" uid="uid://ck37jq0cuoqkw" path="res://Gyms/Taq/Asset/Audio/sfx_ambiance_apartment_roomFridgeLights.ogg" id="12_jd2rr"]
-[ext_resource type="Texture2D" uid="uid://ckp7wn5gqefxc" path="res://Gyms/Taq/UI/cat.jpg" id="13_r80e1"]
-[ext_resource type="Script" uid="uid://bwfw68homqhax" path="res://Gyms/Derek/Events/event_manager.gd" id="14_djf6a"]
+[ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="1_d73nw"]
+[ext_resource type="PackedScene" uid="uid://t4v7nx8ognp2" path="res://Gyms/Derek/Character.tscn" id="2_objaf"]
+[ext_resource type="PackedScene" uid="uid://dhignknd30cfb" path="res://Gyms/Wins/textures/apartment_assets/Apartment.glb" id="3_f4wn3"]
+[ext_resource type="Script" uid="uid://csjccrhj5wnx7" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd" id="4_jlclk"]
+[ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="5_mh3nn"]
+[ext_resource type="Script" uid="uid://dqgc1nyutvtvy" path="res://Gyms/Derek/Interactions/door_interactable.gd" id="6_niu3q"]
+[ext_resource type="PackedScene" uid="uid://bxocjk3j7x2l3" path="res://Gyms/Derek/Interactions/interaction_area.tscn" id="7_lxhpi"]
+[ext_resource type="Script" uid="uid://ciup75dj5bx88" path="res://Maps/item_interaction.gd" id="8_3oy70"]
+[ext_resource type="Script" uid="uid://bqr2o55q8omtd" path="res://Gyms/Taq/UI/ItemResource.gd" id="9_5evlm"]
+[ext_resource type="PackedScene" uid="uid://y5ky31pbike1" path="res://Gyms/Taq/UI/ItemUILayer.tscn" id="10_wnv30"]
+[ext_resource type="AudioStream" uid="uid://ck37jq0cuoqkw" path="res://Gyms/Taq/Asset/Audio/sfx_ambiance_apartment_roomFridgeLights.ogg" id="11_ewsrs"]
+[ext_resource type="Resource" uid="uid://b7plnhm28tcop" path="res://Gyms/Derek/Events/1stMeeting.dialogue" id="12_1ijqb"]
+[ext_resource type="Script" uid="uid://cr48xqrtoq6ld" path="res://Gyms/Derek/Events/DialogueEventResource.gd" id="13_esjfe"]
+[ext_resource type="Texture2D" uid="uid://ckp7wn5gqefxc" path="res://Gyms/Taq/UI/cat.jpg" id="14_72p0t"]
+[ext_resource type="Script" uid="uid://bwfw68homqhax" path="res://Gyms/Derek/Events/event_manager.gd" id="15_2p82v"]
 
 [sub_resource type="Animation" id="Animation_4edn7"]
 length = 0.001
@@ -44,27 +44,27 @@ _data = {
 }
 
 [sub_resource type="Resource" id="Resource_sqt6l"]
-script = ExtResource("5_7ut2d")
+script = ExtResource("5_mh3nn")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_vmjrg"]
 size = Vector3(1, 2.1906128, 0.27825928)
 
 [sub_resource type="Resource" id="Resource_djf6a"]
-script = ExtResource("9_in6ey")
+script = ExtResource("9_5evlm")
 metadata/_custom_type_script = "uid://bqr2o55q8omtd"
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_eacaq"]
 
 [sub_resource type="Resource" id="Resource_4edn7"]
-script = ExtResource("12_djf6a")
-dialogueResource = ExtResource("12_4edn7")
+script = ExtResource("13_esjfe")
+dialogueResource = ExtResource("12_1ijqb")
 metadata/_custom_type_script = "uid://cr48xqrtoq6ld"
 
 [sub_resource type="Resource" id="Resource_eacaq"]
-script = ExtResource("9_in6ey")
+script = ExtResource("9_5evlm")
 itemName = "Notepad"
 itemDescription = "A notepad. Someone left a message on it, it says: “Hey, haven’t heard from you in a while. Getting a little worried, give me a call when you get this. - R”"
-itemImage = ExtResource("13_r80e1")
+itemImage = ExtResource("14_72p0t")
 triggersEvent = true
 event = SubResource("Resource_4edn7")
 metadata/_custom_type_script = "uid://bqr2o55q8omtd"
@@ -91,39 +91,39 @@ fov = 60.0
 [node name="PhantomCameraHost" type="Node" parent="Cameras/Camera3D" unique_id=671206882]
 process_priority = 300
 process_physics_priority = 300
-script = ExtResource("1_a2vf4")
+script = ExtResource("1_d73nw")
 metadata/_custom_type_script = "uid://bd046eokvcnu2"
 
-[node name="CharacterBody3D" parent="." unique_id=52006111 groups=["Player"] instance=ExtResource("1_kgnjy")]
+[node name="CharacterBody3D" parent="." unique_id=52006111 groups=["Player"] instance=ExtResource("2_objaf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.42699972, 1.0184166, 0.19982827)
 forward_speed = 200.0
-backward_speed = 100.0
 turn_speed = 1.0
 auto_turn_speed = 5.0
 tank_controls = true
 
-[node name="Apartment_Assets" parent="." unique_id=434175797 instance=ExtResource("2_id2v6")]
+[node name="Apartment_Assets" parent="." unique_id=434175797 instance=ExtResource("3_f4wn3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 1)
 
-[node name="sm_trashbag5" parent="Apartment_Assets" index="233" unique_id=1175049405]
+[node name="sm_trashbag" parent="Apartment_Assets" index="228" unique_id=1510268596]
+transform = Transform3D(0.34948385, 0, -0.13369352, 0, 0.4015329, 0, 0.13369352, 0, 0.34948385, 1.8916283, 0.3139797, -2.6283488)
+
+[node name="sm_trashbag5" parent="Apartment_Assets" index="233" unique_id=2022675712]
 transform = Transform3D(-0.3735619, 0, -0.021550795, 0, 0.4015329, 0, 0.021550795, 0, -0.3735619, 0.92256176, 0.22430545, 0)
 
 [node name="PhantomCamera3D" type="Node3D" parent="." unique_id=1141862968 node_paths=PackedStringArray("look_at_target")]
-transform = Transform3D(-0.6916822, 0.19682276, -0.69486356, -7.450578e-09, 0.9621464, 0.27253154, 0.7222014, 0.18850534, -0.6654996, -2.4424942, 2.143857, -2.5484052)
-script = ExtResource("4_pkdn6")
+transform = Transform3D(-0.6916821, 0.19682276, -0.6948634, -7.450577e-09, 0.9621464, 0.27253145, 0.7222013, 0.18850534, -0.66549945, -2.4424942, 2.143857, -2.5484052)
+script = ExtResource("4_jlclk")
 look_at_mode = 2
 look_at_target = NodePath("../CharacterBody3D")
 tween_resource = SubResource("Resource_sqt6l")
-align_transform_with_view = Callable()
-align_rotation_with_view = Callable()
 metadata/_custom_type_script = "uid://csjccrhj5wnx7"
 
 [node name="DoorInteraction" type="Node3D" parent="." unique_id=1910483528]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.2989175)
-script = ExtResource("6_7ut2d")
-scene_path = "res://Maps/Hallway_BlockoutWithCam.tscn"
+script = ExtResource("6_niu3q")
+scene_path = "res://Maps/Hallway_2.tscn"
 
-[node name="InteractionArea" parent="DoorInteraction" unique_id=1829814564 instance=ExtResource("7_sqt6l")]
+[node name="InteractionArea" parent="DoorInteraction" unique_id=1829814564 instance=ExtResource("7_lxhpi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3200192, 0.48227406)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DoorInteraction/InteractionArea" unique_id=1220164519]
@@ -131,44 +131,44 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.32254028, -0.0132751465
 shape = SubResource("BoxShape3D_vmjrg")
 
 [node name="TrashInteraction" type="Node3D" parent="." unique_id=2094582720]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5077482, 0, -2.2189593)
-script = ExtResource("8_sqt6l")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.45585525, 2.3841858e-07, -1.5744898)
+script = ExtResource("8_3oy70")
 itemResource = SubResource("Resource_djf6a")
 
-[node name="InteractionArea" parent="TrashInteraction" unique_id=744030587 instance=ExtResource("7_sqt6l")]
+[node name="InteractionArea" parent="TrashInteraction" unique_id=744030587 instance=ExtResource("7_lxhpi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7146554, 0.49834037, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="TrashInteraction/InteractionArea" unique_id=605248523]
 shape = SubResource("SphereShape3D_eacaq")
 
-[node name="ItemUILayer" parent="." unique_id=2110651882 instance=ExtResource("9_8hni3")]
+[node name="ItemUILayer" parent="." unique_id=2110651882 instance=ExtResource("10_wnv30")]
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=2043957629]
-stream = ExtResource("12_jd2rr")
+stream = ExtResource("11_ewsrs")
 volume_db = -17.0
 autoplay = true
 
 [node name="Notepad Interaction" type="Node3D" parent="." unique_id=2088864905]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.808634, 0.81915426, 1.2899612)
-script = ExtResource("8_sqt6l")
+script = ExtResource("8_3oy70")
 itemResource = SubResource("Resource_eacaq")
 
-[node name="InteractionArea" parent="Notepad Interaction" unique_id=1498706141 instance=ExtResource("7_sqt6l")]
+[node name="InteractionArea" parent="Notepad Interaction" unique_id=1498706141 instance=ExtResource("7_lxhpi")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Notepad Interaction/InteractionArea" unique_id=161533693]
 shape = SubResource("SphereShape3D_eacaq")
 
 [node name="Notepad Interaction" type="Node3D" parent="Notepad Interaction" unique_id=3578751]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.808634, 0.81915426, 1.2899612)
-script = ExtResource("8_sqt6l")
+script = ExtResource("8_3oy70")
 itemResource = SubResource("Resource_eacaq")
 
-[node name="InteractionArea" parent="Notepad Interaction/Notepad Interaction" unique_id=92943488 instance=ExtResource("7_sqt6l")]
+[node name="InteractionArea" parent="Notepad Interaction/Notepad Interaction" unique_id=92943488 instance=ExtResource("7_lxhpi")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Notepad Interaction/Notepad Interaction/InteractionArea" unique_id=1675517242]
 shape = SubResource("SphereShape3D_eacaq")
 
 [node name="EventManager" type="Node3D" parent="." unique_id=1145551275]
-script = ExtResource("14_djf6a")
+script = ExtResource("15_2p82v")
 
 [editable path="Apartment_Assets"]

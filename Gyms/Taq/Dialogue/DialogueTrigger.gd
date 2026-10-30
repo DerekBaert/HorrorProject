@@ -1,4 +1,4 @@
-extends RigidBody2D
+extends Node3D
 
 @onready var area2d: Area2D = $Area2D
 @export var dialogueBalloon:PackedScene

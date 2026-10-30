@@ -8,4 +8,5 @@ script = ExtResource("1_626p4")
 
 [node name="Icon" type="Sprite3D" parent="." unique_id=2035936050]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0)
+visible = false
 texture = ExtResource("2_owayg")

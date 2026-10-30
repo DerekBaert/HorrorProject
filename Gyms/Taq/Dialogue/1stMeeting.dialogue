@@ -22,4 +22,5 @@ do GlobalSignalAndState.notificationTriggered.emit("Obtained: A Can of Beer")
 Andrew: Oh, yea…
 	#Andrew takes the beer
 do GlobalSignalAndState.canMove = true
+do SceneManager.change_scene("res://Maps/Apartment_Scene_2.tscn")
 => END

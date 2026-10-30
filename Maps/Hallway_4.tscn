@@ -1,27 +1,27 @@
-[gd_scene format=4 uid="uid://cx1lwhucijydo"]
+[gd_scene format=4 uid="uid://d1u6n3ululdnm"]
 
-[ext_resource type="PackedScene" uid="uid://t4v7nx8ognp2" path="res://Gyms/Derek/Character.tscn" id="1_mfkrl"]
-[ext_resource type="Script" uid="uid://dixx3e27pg767" path="res://Maps/camera_shake.gd" id="1_o8bqa"]
-[ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="1_wb16a"]
-[ext_resource type="Script" uid="uid://rosulqynujp8" path="res://Gyms/Derek/hallway_animation.gd" id="2_fpmok"]
-[ext_resource type="Texture2D" uid="uid://c3u1h61fri7x2" path="res://Gyms/Wins/textures/hallway_assets/Hallway_wall_3.png" id="3_ho0gp"]
-[ext_resource type="Texture2D" uid="uid://dykisl4pkxuro" path="res://Gyms/Wins/textures/hallway_assets/Hallway_door_frame_wood_1.png" id="4_yjhuo"]
-[ext_resource type="Texture2D" uid="uid://c0mfhtjgng5hk" path="res://Gyms/Wins/textures/hallway_assets/Hallway_door_3.png" id="5_ies2r"]
-[ext_resource type="Texture2D" uid="uid://b27osnyq0ke5n" path="res://Gyms/Wins/textures/hallway_assets/Hallway_door_handle_1.png" id="6_gxt8w"]
-[ext_resource type="Texture2D" uid="uid://b5da2g1sdxp4" path="res://Gyms/Wins/textures/hallway_assets/Hallway_door_1.png" id="7_33203"]
-[ext_resource type="Texture2D" uid="uid://kjxvvo55vlyc" path="res://Gyms/Wins/textures/hallway_assets/Hallway_floor_1.png" id="8_ajo1y"]
-[ext_resource type="Texture2D" uid="uid://b4oibbjb4txow" path="res://Gyms/Wins/textures/hallway_assets/Hallway_concrete_1.jpg" id="9_s16ek"]
-[ext_resource type="Script" uid="uid://dqgc1nyutvtvy" path="res://Gyms/Derek/Interactions/door_interactable.gd" id="10_k171f"]
-[ext_resource type="PackedScene" uid="uid://bxocjk3j7x2l3" path="res://Gyms/Derek/Interactions/interaction_area.tscn" id="11_o8bqa"]
-[ext_resource type="Script" uid="uid://csjccrhj5wnx7" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd" id="13_2gnxf"]
-[ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="14_3aaiv"]
-[ext_resource type="Script" uid="uid://cuffvge5ad4aa" path="res://addons/phantom_camera/scripts/resources/phantom_camera_noise_3d.gd" id="15_e6iod"]
+[ext_resource type="Script" uid="uid://csjccrhj5wnx7" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd" id="1_pk17i"]
+[ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="2_m4rty"]
+[ext_resource type="Script" uid="uid://cuffvge5ad4aa" path="res://addons/phantom_camera/scripts/resources/phantom_camera_noise_3d.gd" id="3_pbmy6"]
+[ext_resource type="Script" uid="uid://dixx3e27pg767" path="res://Maps/camera_shake.gd" id="4_pshax"]
+[ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="5_nwfra"]
+[ext_resource type="PackedScene" uid="uid://t4v7nx8ognp2" path="res://Gyms/Derek/Character.tscn" id="6_wxvno"]
+[ext_resource type="Script" uid="uid://rosulqynujp8" path="res://Gyms/Derek/hallway_animation.gd" id="7_s7oqs"]
+[ext_resource type="Texture2D" uid="uid://c3u1h61fri7x2" path="res://Gyms/Wins/textures/hallway_assets/Hallway_wall_3.png" id="8_twchx"]
+[ext_resource type="Texture2D" uid="uid://dykisl4pkxuro" path="res://Gyms/Wins/textures/hallway_assets/Hallway_door_frame_wood_1.png" id="9_bb6qi"]
+[ext_resource type="Texture2D" uid="uid://c0mfhtjgng5hk" path="res://Gyms/Wins/textures/hallway_assets/Hallway_door_3.png" id="10_hag5w"]
+[ext_resource type="Texture2D" uid="uid://b27osnyq0ke5n" path="res://Gyms/Wins/textures/hallway_assets/Hallway_door_handle_1.png" id="11_yka2i"]
+[ext_resource type="Texture2D" uid="uid://b5da2g1sdxp4" path="res://Gyms/Wins/textures/hallway_assets/Hallway_door_1.png" id="12_rh86l"]
+[ext_resource type="Texture2D" uid="uid://kjxvvo55vlyc" path="res://Gyms/Wins/textures/hallway_assets/Hallway_floor_1.png" id="13_egerp"]
+[ext_resource type="Texture2D" uid="uid://b4oibbjb4txow" path="res://Gyms/Wins/textures/hallway_assets/Hallway_concrete_1.jpg" id="14_14u31"]
+[ext_resource type="Script" uid="uid://dqgc1nyutvtvy" path="res://Gyms/Derek/Interactions/door_interactable.gd" id="15_aowwk"]
+[ext_resource type="PackedScene" uid="uid://bxocjk3j7x2l3" path="res://Gyms/Derek/Interactions/interaction_area.tscn" id="16_ua0m4"]
 
 [sub_resource type="Resource" id="Resource_wb16a"]
-script = ExtResource("14_3aaiv")
+script = ExtResource("2_m4rty")
 
 [sub_resource type="Resource" id="Resource_2gnxf"]
-script = ExtResource("15_e6iod")
+script = ExtResource("3_pbmy6")
 amplitude = 2.0
 frequency = 0.1
 rotational_noise = false
@@ -64,7 +64,7 @@ tracks/0/enabled = true
 tracks/0/path = NodePath("CameraPivot/Camera3D")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
-tracks/0/keys = PackedFloat32Array(0, 1, 0, -0.707107, 0, 0.707107, 5, 1, 0, -0.707107, 0, 0.707107, 5.2, 1, 0, -0.707107, 0, 0.707107, 6.2, 1, -0.707107, 0, 0, 0.707107, 7, 1, 0, 0.707107, 0, 0.707107, 8.5, 1, 0, 0.707107, 0, 0.707107)
+tracks/0/keys = PackedFloat32Array(0, 1, 0, -0.707107, 0, 0.707107, 5, 1, 0, -0.707107, 0, 0.707107, 5.2, 1, 0, -0.707107, 0, 0.707107, 6.2, 1, -0.707107, 0, 0, 0.707107, 7.3333335, 1, 0, 0.707107, 0, 0.707107, 9.966666, 1, 0, 0.707107, 0, 0.707107)
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
@@ -72,7 +72,7 @@ tracks/1/path = NodePath("CameraPivot:position:x")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 5, 5.2, 6, 6.1666665, 6.3333335, 6.633333, 7, 8.5),
+"times": PackedFloat32Array(0, 5, 5.2, 6, 6.1666665, 6.3333335, 6.9666667, 7.3333335, 9.966666),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
 "values": [10.0, -13.0, -13.0, -8.5, -7.3600016, -6.6, -5.936, -5.0, -10.0]
@@ -84,7 +84,7 @@ tracks/2/path = NodePath("CameraPivot:position:y")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 5, 6, 6.1666665, 6.3333335, 6.633333, 7, 8.5),
+"times": PackedFloat32Array(0, 5, 6, 6.1666665, 6.3333335, 6.633333, 7, 9.966666),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
 "values": [1.0, 1.0, 3.25, 3.5499995, 3.75, 2.52625, 1.0, 1.0]
@@ -103,14 +103,14 @@ _data = {
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0nyw7"]
 resource_name = "wall_3.008"
 cull_mode = 2
-albedo_texture = ExtResource("3_ho0gp")
+albedo_texture = ExtResource("8_twchx")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8jq5p"]
 resource_name = "door_frame_wood_1.017"
 cull_mode = 2
-albedo_texture = ExtResource("4_yjhuo")
+albedo_texture = ExtResource("9_bb6qi")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
@@ -173,14 +173,14 @@ shadow_mesh = SubResource("ArrayMesh_pv43f")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m81s6"]
 resource_name = "door_3"
 cull_mode = 2
-albedo_texture = ExtResource("5_ies2r")
+albedo_texture = ExtResource("10_hag5w")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mg8uk"]
 resource_name = "door_handle_1.002"
 cull_mode = 2
-albedo_texture = ExtResource("6_gxt8w")
+albedo_texture = ExtResource("11_yka2i")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
@@ -279,14 +279,14 @@ shadow_mesh = SubResource("ArrayMesh_op4ug")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mbf5p"]
 resource_name = "wall_3.007"
 cull_mode = 2
-albedo_texture = ExtResource("3_ho0gp")
+albedo_texture = ExtResource("8_twchx")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7v2uf"]
 resource_name = "door_frame_wood_1.016"
 cull_mode = 2
-albedo_texture = ExtResource("4_yjhuo")
+albedo_texture = ExtResource("9_bb6qi")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
@@ -349,14 +349,14 @@ shadow_mesh = SubResource("ArrayMesh_hey1a")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1yhxr"]
 resource_name = "door_1.002"
 cull_mode = 2
-albedo_texture = ExtResource("7_33203")
+albedo_texture = ExtResource("12_rh86l")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7hx1c"]
 resource_name = "door_handle_1"
 cull_mode = 2
-albedo_texture = ExtResource("6_gxt8w")
+albedo_texture = ExtResource("11_yka2i")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
@@ -419,7 +419,7 @@ shadow_mesh = SubResource("ArrayMesh_fbvcl")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_40ks3"]
 resource_name = "door_handle_1.004"
 cull_mode = 2
-albedo_texture = ExtResource("6_gxt8w")
+albedo_texture = ExtResource("11_yka2i")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
@@ -460,14 +460,14 @@ shadow_mesh = SubResource("ArrayMesh_8ux2k")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hx6im"]
 resource_name = "floor_1"
 cull_mode = 2
-albedo_texture = ExtResource("8_ajo1y")
+albedo_texture = ExtResource("13_egerp")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4p42r"]
 resource_name = "concrete_1.002"
 cull_mode = 2
-albedo_texture = ExtResource("9_s16ek")
+albedo_texture = ExtResource("14_14u31")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
@@ -528,14 +528,14 @@ shadow_mesh = SubResource("ArrayMesh_n453v")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_egey3"]
 resource_name = "floor_1.004"
 cull_mode = 2
-albedo_texture = ExtResource("8_ajo1y")
+albedo_texture = ExtResource("13_egerp")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_to1uo"]
 resource_name = "concrete_1.007"
 cull_mode = 2
-albedo_texture = ExtResource("9_s16ek")
+albedo_texture = ExtResource("14_14u31")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
@@ -866,14 +866,14 @@ shadow_mesh = SubResource("ArrayMesh_37qfj")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gxhul"]
 resource_name = "wall_3"
 cull_mode = 2
-albedo_texture = ExtResource("3_ho0gp")
+albedo_texture = ExtResource("8_twchx")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7ce0a"]
 resource_name = "door_frame_wood_1"
 cull_mode = 2
-albedo_texture = ExtResource("4_yjhuo")
+albedo_texture = ExtResource("9_bb6qi")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
@@ -1642,8 +1642,8 @@ size = Vector3(1, 2.604004, 1)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 1, 0)
 
 [node name="PhantomCamera3D" type="Node3D" parent="CameraPivot" unique_id=834159958 node_paths=PackedStringArray("look_at_target")]
-transform = Transform3D(0.004674614, -0.0009850275, -0.99998873, 0, 0.9999995, -0.0009850385, 0.9999892, 4.6046916e-06, 0.004674614, 0, 0, 0)
-script = ExtResource("13_2gnxf")
+transform = Transform3D(0.019789701, -0.0041691936, -0.9997958, 0, 0.9999913, -0.004170011, 0.9998045, 8.252333e-05, 0.019789523, 0, 0, 0)
+script = ExtResource("1_pk17i")
 look_at_mode = 2
 look_at_target = NodePath("../../CharacterBody3D")
 tween_resource = SubResource("Resource_wb16a")
@@ -1654,14 +1654,14 @@ metadata/_custom_type_script = "uid://csjccrhj5wnx7"
 
 [node name="Camera3D" type="Camera3D" parent="CameraPivot" unique_id=490589236 groups=["Camera"]]
 physics_interpolation_mode = 1
-transform = Transform3D(0.0046746135, -0.0009850275, -0.9999886, 0, 0.9999995, -0.0009850384, 0.9999891, 4.604673e-06, 0.004674611, -12.074808, 0.99384737, 0.0123690255)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -12.074808, 0.99384737, 0.0123690255)
 top_level = true
-script = ExtResource("1_o8bqa")
+script = ExtResource("4_pshax")
 
 [node name="PhantomCameraHost" type="Node" parent="CameraPivot/Camera3D" unique_id=737556036]
 process_priority = 300
 process_physics_priority = 300
-script = ExtResource("1_wb16a")
+script = ExtResource("5_nwfra")
 metadata/_custom_type_script = "uid://bd046eokvcnu2"
 
 [node name="Lights" type="Node3D" parent="." unique_id=51572136]
@@ -1682,16 +1682,16 @@ transform = Transform3D(-4.371139e-08, 1, 4.371139e-08, 0, -4.371139e-08, 1, 1, 
 light_color = Color(0.5663506, 0.6053199, 0.9220392, 1)
 light_energy = 0.35
 
-[node name="CharacterBody3D" parent="." unique_id=52006111 instance=ExtResource("1_mfkrl")]
+[node name="CharacterBody3D" parent="." unique_id=52006111 instance=ExtResource("6_wxvno")]
 transform = Transform3D(-0.025855802, 0, 0.9996657, 0, 1, 0, -0.9996657, 0, -0.025855802, 16.827106, 1.0284749, -0.13513327)
-forward_speed = 400.0
+forward_speed = 100.0
 turn_speed = 1.0
 auto_turn_speed = 5.0
 tank_controls = true
 
 [node name="OverheadCamera" type="AnimationPlayer" parent="." unique_id=1846351284 node_paths=PackedStringArray("target", "endpoint")]
 libraries/ = SubResource("AnimationLibrary_xiw5m")
-script = ExtResource("2_fpmok")
+script = ExtResource("7_s7oqs")
 target = NodePath("../CharacterBody3D")
 endpoint = NodePath("../HallwayAssets/doorway_rotroom")
 
@@ -2068,10 +2068,10 @@ mesh = SubResource("ArrayMesh_87lba")
 
 [node name="DoorInteraction" type="Node3D" parent="." unique_id=1220520953]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.995481, 0.4954648, -0.10282779)
-script = ExtResource("10_k171f")
-scene_path = "res://Maps/RotRoom.tscn"
+script = ExtResource("15_aowwk")
+scene_path = "res://Maps/RotRoom_4.tscn"
 
-[node name="InteractionArea" parent="DoorInteraction" unique_id=1829814564 instance=ExtResource("11_o8bqa")]
+[node name="InteractionArea" parent="DoorInteraction" unique_id=1829814564 instance=ExtResource("16_ua0m4")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DoorInteraction/InteractionArea" unique_id=1159708062]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.80200195, 0)

@@ -3,16 +3,18 @@ extends CharacterBody3D
 signal characterMovementChanged(is_moving:bool)
 
 @export var forward_speed: float = 200.0
-var backward_speed: float = forward_speed * 0.5
+@export var backward_speed_percentage: float = 0.5
 @export var turn_speed: float = 1.0
 @export var auto_turn_speed: float = 5.0
 @export var tank_controls: bool = false
 @onready var camera = get_tree().get_first_node_in_group('Camera')
 @onready var interactionCheck = $ShapeCast3D
 var dir
+var backward_speed: float
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	backward_speed =  forward_speed * 0.5
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

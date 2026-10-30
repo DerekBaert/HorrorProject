@@ -1,24 +1,24 @@
-[gd_scene format=4 uid="uid://cdrou327sxqtn"]
+[gd_scene format=4 uid="uid://d17ckc5eqyqxm"]
 
-[ext_resource type="Texture2D" uid="uid://u12ddah5xggn" path="res://Gyms/Wins/textures/rotroom_assets/RotRoom_floor_1.png" id="1_nwict"]
-[ext_resource type="Texture2D" uid="uid://dmntc7rfrg2nq" path="res://Gyms/Wins/textures/rotroom_assets/RotRoom_concrete_1.jpg" id="2_snypr"]
-[ext_resource type="Texture2D" uid="uid://chvvmg3o3artp" path="res://Gyms/Wins/textures/rotroom_assets/RotRoom_tiles_floor_1.png" id="3_pfxxe"]
-[ext_resource type="Texture2D" uid="uid://cbkdgsupkremi" path="res://Gyms/Wins/textures/rotroom_assets/RotRoom_door_3.png" id="4_uhxff"]
-[ext_resource type="Texture2D" uid="uid://ga2urd8iuojs" path="res://Gyms/Wins/textures/rotroom_assets/RotRoom_door_handle_1.png" id="5_gbvhk"]
-[ext_resource type="Texture2D" uid="uid://ds60h004mv22" path="res://Gyms/Wins/textures/rotroom_assets/RotRoom_wood_6.png" id="6_6j28s"]
-[ext_resource type="PackedScene" uid="uid://t4v7nx8ognp2" path="res://Gyms/Derek/Character.tscn" id="7_gbvhk"]
+[ext_resource type="Texture2D" uid="uid://u12ddah5xggn" path="res://Gyms/Wins/textures/rotroom_assets/RotRoom_floor_1.png" id="1_4llvc"]
+[ext_resource type="Texture2D" uid="uid://dmntc7rfrg2nq" path="res://Gyms/Wins/textures/rotroom_assets/RotRoom_concrete_1.jpg" id="2_ynuvb"]
+[ext_resource type="Texture2D" uid="uid://chvvmg3o3artp" path="res://Gyms/Wins/textures/rotroom_assets/RotRoom_tiles_floor_1.png" id="3_onma5"]
+[ext_resource type="Texture2D" uid="uid://cbkdgsupkremi" path="res://Gyms/Wins/textures/rotroom_assets/RotRoom_door_3.png" id="4_wwgsu"]
+[ext_resource type="Texture2D" uid="uid://ga2urd8iuojs" path="res://Gyms/Wins/textures/rotroom_assets/RotRoom_door_handle_1.png" id="5_8ouar"]
+[ext_resource type="Texture2D" uid="uid://ds60h004mv22" path="res://Gyms/Wins/textures/rotroom_assets/RotRoom_wood_6.png" id="6_5jyox"]
+[ext_resource type="PackedScene" uid="uid://t4v7nx8ognp2" path="res://Gyms/Derek/Character.tscn" id="7_bb8mf"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x76jy"]
 resource_name = "floor_1.005"
 cull_mode = 2
-albedo_texture = ExtResource("1_nwict")
+albedo_texture = ExtResource("1_4llvc")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xs00m"]
 resource_name = "concrete_1.008"
 cull_mode = 2
-albedo_texture = ExtResource("2_snypr")
+albedo_texture = ExtResource("2_ynuvb")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
@@ -79,14 +79,14 @@ shadow_mesh = SubResource("ArrayMesh_vuin2")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4ubmr"]
 resource_name = "floor_1.006"
 cull_mode = 2
-albedo_texture = ExtResource("1_nwict")
+albedo_texture = ExtResource("1_4llvc")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5qxes"]
 resource_name = "concrete_1.009"
 cull_mode = 2
-albedo_texture = ExtResource("2_snypr")
+albedo_texture = ExtResource("2_ynuvb")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
@@ -147,14 +147,14 @@ shadow_mesh = SubResource("ArrayMesh_gqgnq")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8xajt"]
 resource_name = "floor_1.007"
 cull_mode = 2
-albedo_texture = ExtResource("1_nwict")
+albedo_texture = ExtResource("1_4llvc")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_23dnt"]
 resource_name = "concrete_1.010"
 cull_mode = 2
-albedo_texture = ExtResource("2_snypr")
+albedo_texture = ExtResource("2_ynuvb")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
@@ -215,14 +215,14 @@ shadow_mesh = SubResource("ArrayMesh_2kraa")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x2e11"]
 resource_name = "floor_1.008"
 cull_mode = 2
-albedo_texture = ExtResource("1_nwict")
+albedo_texture = ExtResource("1_4llvc")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6cnwu"]
 resource_name = "concrete_1.011"
 cull_mode = 2
-albedo_texture = ExtResource("2_snypr")
+albedo_texture = ExtResource("2_ynuvb")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
@@ -553,14 +553,14 @@ shadow_mesh = SubResource("ArrayMesh_07onq")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j8w52"]
 resource_name = "floor_1"
 cull_mode = 2
-albedo_texture = ExtResource("1_nwict")
+albedo_texture = ExtResource("1_4llvc")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hfvpj"]
 resource_name = "concrete_1.002"
 cull_mode = 2
-albedo_texture = ExtResource("2_snypr")
+albedo_texture = ExtResource("2_ynuvb")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
@@ -621,14 +621,14 @@ shadow_mesh = SubResource("ArrayMesh_frs80")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gbuvm"]
 resource_name = "floor_1.002"
 cull_mode = 2
-albedo_texture = ExtResource("1_nwict")
+albedo_texture = ExtResource("1_4llvc")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ggqtr"]
 resource_name = "concrete_1.005"
 cull_mode = 2
-albedo_texture = ExtResource("2_snypr")
+albedo_texture = ExtResource("2_ynuvb")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
@@ -689,14 +689,14 @@ shadow_mesh = SubResource("ArrayMesh_0ygcd")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cbwje"]
 resource_name = "floor_1.003"
 cull_mode = 2
-albedo_texture = ExtResource("1_nwict")
+albedo_texture = ExtResource("1_4llvc")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bpfnw"]
 resource_name = "concrete_1.006"
 cull_mode = 2
-albedo_texture = ExtResource("2_snypr")
+albedo_texture = ExtResource("2_ynuvb")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
@@ -757,14 +757,14 @@ shadow_mesh = SubResource("ArrayMesh_mjrpv")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_27w60"]
 resource_name = "floor_1.004"
 cull_mode = 2
-albedo_texture = ExtResource("1_nwict")
+albedo_texture = ExtResource("1_4llvc")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1eq6j"]
 resource_name = "concrete_1.007"
 cull_mode = 2
-albedo_texture = ExtResource("2_snypr")
+albedo_texture = ExtResource("2_ynuvb")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
@@ -1095,14 +1095,14 @@ shadow_mesh = SubResource("ArrayMesh_5bxxs")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_40xlx"]
 resource_name = "tiles_floor_1"
 cull_mode = 2
-albedo_texture = ExtResource("3_pfxxe")
+albedo_texture = ExtResource("3_onma5")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f57x7"]
 resource_name = "concrete_1.003"
 cull_mode = 2
-albedo_texture = ExtResource("2_snypr")
+albedo_texture = ExtResource("2_ynuvb")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
@@ -3593,14 +3593,14 @@ shadow_mesh = SubResource("ArrayMesh_eww5q")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v2i15"]
 resource_name = "door_3"
 cull_mode = 2
-albedo_texture = ExtResource("4_uhxff")
+albedo_texture = ExtResource("4_wwgsu")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bk3ab"]
 resource_name = "door_handle_1.006"
 cull_mode = 2
-albedo_texture = ExtResource("5_gbvhk")
+albedo_texture = ExtResource("5_8ouar")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
@@ -3739,7 +3739,7 @@ shadow_mesh = SubResource("ArrayMesh_42p4w")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3kfpv"]
 resource_name = "wood_6.005"
 cull_mode = 2
-albedo_texture = ExtResource("6_6j28s")
+albedo_texture = ExtResource("6_5jyox")
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
@@ -4061,7 +4061,7 @@ light_size = 0.33
 light_negative = true
 spot_angle = 63.843456
 
-[node name="CharacterBody3D" parent="." unique_id=52006111 instance=ExtResource("7_gbvhk")]
+[node name="CharacterBody3D" parent="." unique_id=52006111 instance=ExtResource("7_bb8mf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.046910048, 1.1001897, 5.4412346)
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=486394396]
