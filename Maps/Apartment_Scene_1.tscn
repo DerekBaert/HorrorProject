@@ -104,15 +104,20 @@ tank_controls = true
 [node name="Apartment_Assets" parent="." unique_id=434175797 instance=ExtResource("3_owmfw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 1)
 
-[node name="sm_trashbag5" parent="Apartment_Assets" index="233" unique_id=2022675712]
+[node name="wall_2_1_001" parent="Apartment_Assets" index="17" unique_id=880497053]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.072317, -0.0039260387, 1.0439606)
+
+[node name="sm_trashbag5" parent="Apartment_Assets" index="233" unique_id=362764050]
 transform = Transform3D(-0.3735619, 0, -0.021550795, 0, 0.4015329, 0, 0.021550795, 0, -0.3735619, 0.92256176, 0.22430545, 0)
 
 [node name="PhantomCamera3D" type="Node3D" parent="." unique_id=1141862968 node_paths=PackedStringArray("look_at_target")]
-transform = Transform3D(-0.6916821, 0.19682276, -0.6948634, -7.450577e-09, 0.9621464, 0.27253145, 0.7222013, 0.18850534, -0.66549945, -2.4424942, 2.143857, -2.5484052)
+transform = Transform3D(-0.69168204, 0.19682276, -0.69486326, -7.450576e-09, 0.9621464, 0.27253142, 0.7222012, 0.18850534, -0.6654994, -2.4424942, 2.143857, -2.5484052)
 script = ExtResource("4_nxssm")
 look_at_mode = 2
 look_at_target = NodePath("../CharacterBody3D")
 tween_resource = SubResource("Resource_sqt6l")
+align_transform_with_view = Callable()
+align_rotation_with_view = Callable()
 metadata/_custom_type_script = "uid://csjccrhj5wnx7"
 
 [node name="DoorInteraction" type="Node3D" parent="." unique_id=1910483528]
