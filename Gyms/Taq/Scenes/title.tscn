@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://5xq6nsa18pbe"]
+
+[ext_resource type="PackedScene" uid="uid://5cc5elfpqvjp" path="res://Gyms/Taq/Shader/Flashback.tscn" id="1_l1nrv"]
+[ext_resource type="Script" uid="uid://dhmrhoj6s3w61" path="res://Gyms/Taq/Scenes/title.gd" id="1_ldmyv"]
+[ext_resource type="Texture2D" uid="uid://dcbgt0yie880b" path="res://Gyms/Taq/Asset/Art/Screenshot_2026-10-31_10-37-09.png" id="2_ldmyv"]
+[ext_resource type="Texture2D" uid="uid://beg0pdkavic1p" path="res://Gyms/Taq/Asset/Art/DRIP_Logo_White.png" id="4_ydh71"]
+
+[sub_resource type="Animation" id="Animation_ydh71"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TitleBG:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(3, 3)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TitleBG:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_ko666"]
+resource_name = "ZoomOut"
+length = 30.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TitleBG:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.0666666, 29.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(3, 3), Vector2(1.1, 1.1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TitleBG:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(5.3333335, 19.951159, 29.883738),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(0.012617188, 0.012617188, 0.012617188, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hyh0j"]
+_data = {
+&"RESET": SubResource("Animation_ydh71"),
+&"ZoomOut": SubResource("Animation_ko666")
+}
+
+[node name="Title" type="Node2D" unique_id=127323005]
+script = ExtResource("1_ldmyv")
+
+[node name="TitleBG" type="Sprite2D" parent="." unique_id=1584461919]
+position = Vector2(591, 335)
+scale = Vector2(3, 3)
+texture = ExtResource("2_ldmyv")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="TitleBG" unique_id=2019504691]
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_hyh0j")
+autoplay = &"ZoomOut"
+
+[node name="Flashback" parent="." unique_id=1059222511 instance=ExtResource("1_l1nrv")]
+
+[node name="Timer" type="Timer" parent="." unique_id=829078815]
+one_shot = true
+
+[node name="DripLogoWhite" type="Sprite2D" parent="." unique_id=1233580025]
+position = Vector2(336, 325)
+scale = Vector2(0.19949663, 0.19949663)
+texture = ExtResource("4_ydh71")

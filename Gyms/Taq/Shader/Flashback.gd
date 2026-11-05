@@ -17,6 +17,7 @@ func _process(delta: float) -> void:
 
 ## Hook this up with signal or call it from somewhere to trigger the flashback
 func swapFlashbackImage()->void:
+	print("swapped")
 	glitchFilter.show()
 	flashbackImage.show()
 	flashbackImage.texture = flashbackImages.pick_random()

@@ -2,7 +2,6 @@
 
 [ext_resource type="Shader" uid="uid://cokrp6vo8sj1g" path="res://Gyms/Taq/Shader/GlitchShader.gdshader" id="1_0700v"]
 [ext_resource type="Script" uid="uid://cgt8dk3g786l0" path="res://Gyms/Taq/Shader/Flashback.gd" id="1_bo27e"]
-[ext_resource type="Texture2D" uid="uid://cqwnln8l1g1xj" path="res://Gyms/Taq/Shader/FlashbackImages/IMG_5996.jpg" id="3_qldyi"]
 [ext_resource type="Texture2D" uid="uid://drgcewnnn6crb" path="res://Gyms/Taq/Shader/FlashbackImages/IMG_6004.jpg" id="4_u4odk"]
 [ext_resource type="Texture2D" uid="uid://brluqtemtqgcm" path="res://Gyms/Taq/Shader/FlashbackImages/IMG_6006.jpg" id="5_j1bao"]
 [ext_resource type="Texture2D" uid="uid://dwslrm5viojoi" path="res://Gyms/Taq/Shader/FlashbackImages/Untitled_Artwork.png" id="6_104ph"]
@@ -18,7 +17,7 @@ shader_parameter/shake_color_rate = 0.030000001425
 
 [node name="Flashback" type="Node2D" unique_id=1059222511]
 script = ExtResource("1_bo27e")
-flashbackImages = Array[Texture]([ExtResource("8_j1bao"), ExtResource("3_qldyi"), ExtResource("4_u4odk"), ExtResource("5_j1bao"), ExtResource("6_104ph")])
+flashbackImages = Array[Texture]([ExtResource("8_j1bao"), ExtResource("4_u4odk"), ExtResource("5_j1bao"), ExtResource("6_104ph")])
 
 [node name="FlashbackImage" type="Sprite2D" parent="." unique_id=991758917]
 position = Vector2(575, 274)
